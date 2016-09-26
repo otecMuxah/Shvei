@@ -1,0 +1,24 @@
+.checkbox {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 5px 0;
+    cursor: pointer;
+    margin-bottom: 8px;
+    &__input {
+        position: absolute;
+        left: -30px;
+        height: 0;
+        &:checked + .checkbox__custom-checkbox {
+            background-position: 0 -353px;
+        }
+    }
+    &__custom-checkbox {
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-position: 0 -304px;
+        float: right;
+        margin: -2px 6px 0 0;
+    }
+}

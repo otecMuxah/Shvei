@@ -1,0 +1,45 @@
+.filter-by {
+    font: 20px $font;
+    margin-bottom: 20px;
+    &__title {
+        text-transform: uppercase;
+        font: 24px/30px $font_roman_bold;
+        color: $color-dark-blue;
+        border-bottom: 4px solid $color-dark-blue;
+        display: inline-block;
+        padding: 0 0 4px 9px;
+        margin: 0 -20px 24px ;
+    }
+    &__item {
+        margin-bottom: 9px;
+        .arrow {
+            float: right;
+            margin: 9px 16px 0 0;
+            transform: rotate(180deg);
+            transition: all 0.2s linear;
+            cursor: pointer;
+        }
+    }
+    &__link {
+        font: 20px $font;
+        color: $color-dark-green;
+        &:hover {
+            color: #bd964f;
+        }
+    }
+    &__counter,
+    &__quantity {
+        float: right;
+    }
+    &__slider {
+        margin: 13px 0 0;
+
+    }
+    &__range-text {
+        margin-top: 9px;
+        font: 18px $font_roman_bold;
+        color: $color-dark-green !important;
+        text-align: right;
+        width: 100%;
+    }
+}

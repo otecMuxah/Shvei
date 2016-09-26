@@ -1,0 +1,58 @@
+
+
+@font-face {
+  font-family: 'BodoniFLF-Roman';
+  src: url('../fonts/BodoniFLF-Roman.eot?#iefix') format('embedded-opentype'),  url('../fonts/BodoniFLF-Roman.woff') format('woff'), url('../fonts/BodoniFLF-Roman.ttf')  format('truetype'), url('../fonts/BodoniFLF-Roman.svg#BodoniFLF-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BodoniFLF-Bold';
+  src: url('../fonts/BodoniFLF-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/BodoniFLF-Bold.woff') format('woff'), url('../fonts/BodoniFLF-Bold.ttf')  format('truetype'), url('../fonts/BodoniFLF-Bold.svg#BodoniFLF-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Candara';
+  src: url('../fonts/Candara.eot?#iefix') format('embedded-opentype'),  url('../fonts/Candara.woff') format('woff'), url('../fonts/Candara.ttf')  format('truetype'), url('../fonts/Candara.svg#Candara') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+//break points
+$res_550:   550px;
+$res_610:   610px;
+$res_770:   770px;
+$res_960:   960px;
+$res_1100:  1100px;
+$res_1220:  1220px;
+$res_1440:  1440px;
+
+//colors
+$color-dark-blue:       #140c3b;
+$color-yellow:          #e5bd62;
+$color-dark-green:      #0b311c;
+$color-white:       #fff;
+
+
+//fonts
+$font:            Candara, Arial, sans-serif;
+$font_roman:      BodoniFLF-Roman, Arial, sans-serif;
+$font_roman_bold: BodoniFLF-Bold, Arial, sans-serif;
+
+//sprite
+
+.arrow,
+.header-basket__link,
+.checkbox__custom-checkbox,
+.to-basket,
+.more-info {
+  background: url("../images/sprite.png") no-repeat;
+}
+
+

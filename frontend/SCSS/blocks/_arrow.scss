@@ -1,0 +1,12 @@
+.arrow {
+    width: 10px;
+    height: 6px;
+    background-position: 0 -411px;
+    transform: rotate(0deg);
+    transition: all 0.2s linear;
+    display: block;
+    .selected & {
+        transform: rotate(0deg);
+        transition: all 0.2s linear;
+    }
+}

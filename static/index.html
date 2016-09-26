@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [75, 300],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                    " - $" + $("#slider-range").slider("values", 1));
+
+            $(".arrow").on('click', function () {
+                $(this).closest('li').toggleClass('selected');
+            });
+
+            $(".more-info").on('click', function () {
+                $(this).closest('li').toggleClass('gallery__items--selected');
+            });
+            $(".product-card__close-icon").on('click', function () {
+                $(this).closest('li').toggleClass('gallery__items--selected');
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="header-wrapper">
+    <div class="header-wrapper__inner">
+        <header class="header">
+            <ul class="header-nav">
+                <li class="header-nav__item"><a href="#" class="header-nav__link">Home</a></li>
+                <li class="header-nav__item"><a href="#" class="header-nav__link">Women</a>
+                    <ul class="dropdown dropdown--header">
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                        <li class="dropdown__item"><a href="#" class="dropdown__link">Women</a></li>
+                    </ul>
+                </li>
+                <li class="header-nav__item"><a href="#" class="header-nav__link">Men</a></li>
+                <li class="header-nav__item"><a href="#" class="header-nav__link">Kids</a></li>
+                <li class="header-nav__item"><a href="#" class="header-nav__link">About us</a></li>
+                <li class="header-nav__item"><a href="#" class="header-nav__link">Contact us</a></li>
+            </ul>
+            <a href="#" class="header__logo">MON COUTURIER.COM</a>
+            <ul class="header-basket">
+                <li class="header-basket__item"><a href="#" class="header-basket__link">Register</a></li>
+                <li class="header-basket__item"><a href="#" class="header-basket__link">Login</a></li>
+                <li class="header-basket__item basket"><a href="#" class="header-basket__link">Checkout
+                    <span class="basket__counter">2</span>
+                </a></li>
+            </ul>
+        </header>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="main-part">
+        <aside class="filters">
+            <div class="filter-by">
+                <h2 class="filter-by__title">CATEGORIES</h2>
+                <ul class="filter-by__list">
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">Women</a></li>
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">Men</a>
+                    </li>
+                    <li class="filter-by__item selected">
+                        <a href="#" class="filter-by__link">Kids</a>
+                        <span class="arrow"></span>
+                        <ul class="dropdown">
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">girl</a></li>
+                            <li class="dropdown__item"><a href="#" class="dropdown__link">boy</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <label for="in-stock-check" class="checkbox">
+                    <span class="checkbox__text">IN-STOCK</span>
+                    <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                    <span class="checkbox__custom-checkbox"></span>
+                </label>
+                <label for="custom-check" class="checkbox">
+                    <span class="checkbox__text">CUSTOM</span>
+                    <input id="custom-check" type="checkbox" class="checkbox__input">
+                    <span class="checkbox__custom-checkbox"></span>
+                </label>
+            </div>
+            <div class="filter-by">
+                <h2 class="filter-by__title">FILTER BY PRICE</h2>
+
+
+                <div id="slider-range" class="filter-by__slider"></div>
+                <p>
+                    <label for="amount"></label>
+                    <input class="filter-by__range-text" type="text" id="amount" readonly
+                           style="border:0; color:#f6931f; font-weight:bold;">
+                </p>
+            </div>
+            <div class="filter-by">
+                <h2 class="filter-by__title">BY SIZE</h2>
+                <ul class="filter-by_list">
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">XS<span
+                                class="filter-by__quantity">(1)</span>
+                        </a>
+                    </li>
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">S<span
+                                class="filter-by__quantity">(2)</span>
+                        </a>
+                    </li>
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">M<span
+                                class="filter-by__quantity">(3)</span>
+                        </a>
+                    </li>
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">L<span
+                                class="filter-by__quantity">(4)</span>
+                        </a>
+                    </li>
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">XL<span
+                                class="filter-by__quantity">(1)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-by">
+                <h2 class="filter-by__title">by colors</h2>
+                <ul class="filter-by__list">
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">Blue
+                            <span class="filter-by__counter">(1)</span>
+                        </a>
+                    </li>
+                    <li class="filter-by__item">
+                        <a href="#" class="filter-by__link">Black
+                            <span class="filter-by__counter">(2)</span>
+                        </a>
+                    </li>
+                    <li class="filter-by__item"><a href="#" class="filter-by__link">Gray<span
+                            class="filter-by__counter">(3)</span></a></li>
+                    <li class="filter-by__item"><a href="#" class="filter-by__link">Purple<span
+                            class="filter-by__counter">(4)</span></a></li>
+                    <li class="filter-by__item"><a href="#" class="filter-by__link">Red<span
+                            class="filter-by__counter">(1)</span></a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="gallery">
+            <div class="gallery__sort">
+                <span class="gallery__title">Default sorting <span class="arrow"></span></span>
+            </div>
+            <ul class="gallery__list">
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__wrapper">
+                            <div class="product-card__close-icon">X</div>
+                            <div class="image-continer">
+                                <img src="images/item-card1.png" alt="" class="big-image">
+                                <img src="images/item-card1.png" alt="" class="small-img">
+                                <img src="images/item-card1.png" alt="" class="small-img">
+                                <img src="images/item-card1.png" alt="" class="small-img">
+                            </div>
+                            <div class="product-details">
+                                <h1 class="product-card__title">Shirt with stripes</h1>
+                                <span class="price">75$</span>
+                                <span class="type">Shirt</span>
+                                <span class="gender">Women</span>
+                                <p class="description">Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos himenaeos. Mauris in erat justo.</p>
+                                <div class="colors">
+                                    <h2 class="colors__title">COLOR</h2>
+                                    <ul class="colors__list">
+                                        <li class="colors__items"><span class="colors__links"></span></li>
+                                        <li class="colors__items"><span class="colors__links"></span></li>
+                                        <li class="colors__items"><span class="colors__links"></span></li>
+                                        <li class="colors__items"><span class="colors__links"></span></li>
+                                    </ul>
+                                </div>
+
+                                <span class="material">MATERIAL<span>100% Cotton</span></span>
+                                <div class="size">
+                                    <h2 class="size__title">SIZE</h2>
+                                    <ul class="size__list">
+                                        <li class="size__item"><span class="size__link">XS</span></li>
+                                        <li class="size__item"><span class="size__link">S</span></li>
+                                        <li class="size__item"><span class="size__link">M</span></li>
+                                        <li class="size__item"><span class="size__link">L</span></li>
+                                        <li class="size__item"><span class="size__link">XL</span></li>
+                                    </ul>
+                                </div>
+                                <div class="quantity">
+                                    <h2 class="quantity__title">Quantity</h2>
+                                    <span class="less"><</span>
+                                    <input type="text" value="1">
+                                    <span class="more">></span>
+                                </div>
+                                <span class="button button--float-right">Add to cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+                <li class="gallery__items">
+                    <div class="gallery__item">
+                        <img src="images/item1.png" alt="">
+                        <span class="title">Shirt with stripes</span>
+                        <span class="price">75$</span></div>
+                    <div class="gallery__modal">
+                        <span class="to-basket"></span>
+                        <span class="more-info"></span>
+                    </div>
+                </li>
+            </ul>
+            <div class="pager">
+                <ul class="pager__list">
+                    <li class="pager__item"><a href="#" class="pager__link">1</a></li>
+                    <li class="pager__item"><a href="#" class="pager__link">2</a></li>
+                    <li class="pager__item"><a href="#" class="pager__link">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__items">
+            <ul class="social">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <ul class="footer-nav">
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link"></a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link"></a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link"></a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link"></a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link"></a></li>
+                <li class="footer-nav__item"><a href="#" class="footer-nav__link"></a></li>
+            </ul>
+            <div class="copyright">&copy Mon Couturier/All rights reserved</div>
+        </div>
+
+
+</body>
+
+</html>

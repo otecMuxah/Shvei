@@ -1,0 +1,21 @@
+.pager {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -26px;
+    padding-right: 8px;
+    &__list {
+        float: right;
+        display: flex;
+        margin-right: 8px;
+    }
+    &__link {
+        font: 18px $font;
+        color: $color-dark-green;
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+    &__item {
+        margin-left: 7px;
+    }
+}

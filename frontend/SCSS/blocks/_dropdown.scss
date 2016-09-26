@@ -1,0 +1,40 @@
+.dropdown {
+    padding: 10px 0 10px 21px;
+    display: none;
+    flex-direction: column;
+    &__link {
+        font: 20px $font;
+        color: $color-dark-green;
+    }
+    &__item {
+        margin-bottom: 16px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &--header {
+        position: absolute;
+        left: -12px;
+        top: 36px;
+        padding: 13px 0 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: $color-dark-blue;
+        border-top: 1px gold solid;
+        min-width: 100px;
+        height: 296px;
+        .dropdown__link {
+            font-size: 14px;
+            color: $color-white;
+        }
+        .dropdown__item {
+            padding-left: 15px;
+            margin-bottom: 20px;
+            min-width: 100px;
+            box-sizing: border-box;
+        }
+    }
+    .selected & {
+        display: flex;
+    }
+}

@@ -1,0 +1,20 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 37%;
+  margin-left: 25px;
+  &__link {
+    color: $color-white;
+    font: 18px $font_roman;
+    &:hover {
+      color: $color-yellow;
+    }
+    &:hover + .dropdown {
+      display: flex;
+    }
+  }
+  &__item {
+    position: relative;
+
+  }
+}

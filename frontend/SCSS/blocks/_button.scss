@@ -1,0 +1,15 @@
+.button {
+    text-transform: uppercase;
+    color: $color-white;
+    background: $color-dark-blue;
+    padding: 11px 11px 13px 15px;
+    border-radius: 18px;
+    margin-right: 4px;
+    cursor: pointer;
+    &:hover {
+        background: $color-dark-green;
+    }
+    &--float-right {
+        float: right;
+    }
+}
