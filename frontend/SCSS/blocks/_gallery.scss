@@ -46,14 +46,14 @@
             border-radius: 50%;
 
         }
-        .colors {
+        & > .colors {
             position: absolute;
             top: 143px;
             left: 5px;
-            &__list {
+            .colors__list {
                 flex-direction: column;
             }
-            &__items {
+            .colors__items {
                 margin: 0 0 5px 0;
             }
         }
@@ -116,5 +116,18 @@
         .more-info {
             background-position:  0 -562px;
         }
+    }
+}
+
+@include width-1200 {
+    .gallery {
+        &__list {
+            justify-content: space-around;
+        }
+    }
+}
+@include phone {
+    .gallery {
+        width: 100%;
     }
 }

@@ -1,22 +1,29 @@
 .header-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 37%;
-  margin-left: 25px;
-  margin-top: 20px;
-  &__link {
-    color: $color-white;
-    font: 18px $font_roman;
+    display: flex;
+    justify-content: space-between;
+    width: 37%;
+    margin-left: 25px;
+    margin-top: 20px;
+    &__link {
+        color: $color-white;
+        font: 18px $font_roman;
 
-  }
-  &__item {
-    position: relative;
-    padding-bottom: 20px;
-    &:hover .header-nav__link {
-      color: $color-yellow;
     }
-    &:hover .dropdown {
-      display: flex;
+    &__item {
+        position: relative;
+        padding-bottom: 20px;
+        &:hover .header-nav__link {
+            color: $color-yellow;
+        }
+        &:hover .dropdown {
+            display: flex;
+        }
     }
-  }
+}
+
+@include width-1200 {
+    .header-nav {
+        width: 55%;
+        flex-wrap: wrap;
+    }
 }

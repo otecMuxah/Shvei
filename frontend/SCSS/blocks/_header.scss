@@ -12,20 +12,25 @@
     &__logo {
         text-indent: -9999px;
         background: url(../images/logo.png) no-repeat;
-        width: 228px;
-        height: 178px;
+        width: 140px;
+        height: 131px;
         margin-right: 48px;
         margin-top: 1px;
     }
 
 }
-@include width-1200 {
+@include width-1400 {
     .header{
         margin: 0;
-        padding: 0;
+        padding: 0 110px;
         &__logo {
-            margin-right: 0;
+            margin: 0 10px;
+            flex-shrink: 0;
         }
     }
-
+}
+@include tablet {
+    .header {
+        padding: 0;
+    }
 }

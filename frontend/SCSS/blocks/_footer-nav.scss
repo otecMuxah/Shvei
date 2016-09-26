@@ -15,3 +15,12 @@
         }
     }
 }
+
+@include phone {
+    .footer-nav {
+        flex-direction: column;
+        &__item {
+            margin: 0 0 20px;
+        }
+    }
+}

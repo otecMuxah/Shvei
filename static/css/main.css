@@ -123,17 +123,23 @@ body {
   .header__logo {
     text-indent: -9999px;
     background: url(../images/logo.png) no-repeat;
-    width: 228px;
-    height: 178px;
+    width: 140px;
+    height: 131px;
     margin-right: 48px;
     margin-top: 1px; }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1400px) {
   .header {
     margin: 0;
-    padding: 0; }
+    padding: 0 110px; }
     .header__logo {
-      margin-right: 0; } }
+      margin: 0 10px;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; } }
+
+@media screen and (max-width: 770px) {
+  .header {
+    padding: 0; } }
 
 .header-wrapper {
   width: 100%;
@@ -159,13 +165,13 @@ body {
     width: 1200px; }
 
 @media screen and (max-width: 1400px) {
+  .header-wrapper__inner {
+    width: 100%; } }
+
+@media screen and (max-width: 770px) {
   .header-wrapper:before, .header-wrapper:after {
     background: none;
     z-index: 0; } }
-
-@media screen and (max-width: 1220px) {
-  .header-wrapper__inner {
-    width: 100%; } }
 
 .header-nav {
   display: -webkit-box;
@@ -189,6 +195,12 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+
+@media screen and (max-width: 1220px) {
+  .header-nav {
+    width: 55%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 .header-basket {
   display: -webkit-box;
@@ -240,6 +252,16 @@ body {
             justify-content: center;
     font: 20px BodoniFLF-Bold, Arial, sans-serif; }
 
+@media screen and (max-width: 1220px) {
+  .header-basket {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto; }
+    .header-basket__item {
+      margin-bottom: 25px; } }
+
 .filters {
   width: 222px;
   box-sizing: border-box;
@@ -248,6 +270,10 @@ body {
   padding: 16px 20px;
   height: 100%;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+@media screen and (max-width: 550px) {
+  .filters {
+    width: 100%; } }
 
 .filter-by {
   font: 20px Candara, Arial, sans-serif;
@@ -387,6 +413,17 @@ body {
           justify-content: space-between;
   margin-bottom: 51px; }
 
+@media screen and (max-width: 1220px) {
+  .main-part {
+    padding: 0 7px; } }
+
+@media screen and (max-width: 550px) {
+  .main-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .gallery {
   width: 79.7%;
   margin-left: 10px; }
@@ -447,16 +484,16 @@ body {
       color: #fff;
       background: #0b311c;
       border-radius: 50%; }
-    .gallery__items .colors {
+    .gallery__items > .colors {
       position: absolute;
       top: 143px;
       left: 5px; }
-      .gallery__items .colors__list {
+      .gallery__items > .colors .colors__list {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; }
-      .gallery__items .colors__items {
+      .gallery__items > .colors .colors__items {
         margin: 0 0 5px 0; }
     .gallery__items--selected .product-card {
       display: -webkit-box;
@@ -518,6 +555,15 @@ body {
       margin-right: 25px; }
     .gallery__modal .more-info {
       background-position: 0 -562px; }
+
+@media screen and (max-width: 1220px) {
+  .gallery__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media screen and (max-width: 550px) {
+  .gallery {
+    width: 100%; } }
 
 .pager {
   width: 100%;
@@ -846,3 +892,12 @@ body {
     margin-right: 63px; }
     .footer-nav__item:last-child {
       margin: 0; }
+
+@media screen and (max-width: 550px) {
+  .footer-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer-nav__item {
+      margin: 0 0 20px; } }

@@ -1,53 +1,64 @@
 .header-basket {
-  display: flex;
-  justify-content: space-between;
-  width: 33.6%;
-  margin-right: 25px;
-  &__link {
-    color: $color-white;
-    font: 18px $font_roman;
-    //background: url("../images/sprite.png") no-repeat;
-    padding: 9px 5px 9px 50px;
-
-    &:hover {
-      color: $color-yellow;
-    }
-  }
-  &__item {
-    &:last-child .header-basket__link {
-      background-position: 0 -45px;
-      &:hover {
-        background-position: 0 -197px;
-      }
-    }
-    &:nth-child(2) .header-basket__link {
-      background-position: 0 0;
-      &:hover {
-        background-position: 0 -150px;
-      }
-    }
-    &:first-child .header-basket__link  {
-      background-position: 0 -103px;
-      &:hover {
-        background-position: 0 -256px;
-      }
-    }
-  }
-}
-.basket {
-  position: relative;
-  &__counter {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: -22px;
-    left: 24px;
-    border-radius: 50%;
-    background: $color-white;
-    color: $color-dark-green;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font: 20px $font_roman_bold;
-  }
+    justify-content: space-between;
+    width: 33.6%;
+    margin-right: 25px;
+    &__link {
+        color: $color-white;
+        font: 18px $font_roman;
+        //background: url("../images/sprite.png") no-repeat;
+        padding: 9px 5px 9px 50px;
+
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+    &__item {
+        &:last-child .header-basket__link {
+            background-position: 0 -45px;
+            &:hover {
+                background-position: 0 -197px;
+            }
+        }
+        &:nth-child(2) .header-basket__link {
+            background-position: 0 0;
+            &:hover {
+                background-position: 0 -150px;
+            }
+        }
+        &:first-child .header-basket__link {
+            background-position: 0 -103px;
+            &:hover {
+                background-position: 0 -256px;
+            }
+        }
+    }
+}
+
+.basket {
+    position: relative;
+    &__counter {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: -22px;
+        left: 24px;
+        border-radius: 50%;
+        background: $color-white;
+        color: $color-dark-green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 20px $font_roman_bold;
+    }
+}
+
+@include width-1200 {
+    .header-basket {
+        flex-direction: column;
+        width: auto;
+        &__item {
+            margin-bottom: 25px;
+        }
+    }
 }

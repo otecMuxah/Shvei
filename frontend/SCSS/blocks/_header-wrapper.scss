@@ -26,18 +26,27 @@
     }
 }
 
+//@include width-1400 {
+//    .header-wrapper {
+//        &:before,&:after {
+//            background: none;
+//            z-index: 0;
+//        }
+//    }
+//}
 @include width-1400 {
+    .header-wrapper {
+        &__inner {
+            width: 100%;
+            //padding: 0 116px;
+        }
+    }
+}
+@include tablet {
     .header-wrapper {
         &:before,&:after {
             background: none;
             z-index: 0;
-        }
-    }
-}
-@include width-1200 {
-    .header-wrapper {
-        &__inner {
-            width: 100%;
         }
     }
 }
