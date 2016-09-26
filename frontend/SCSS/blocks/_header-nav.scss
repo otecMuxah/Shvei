@@ -6,15 +6,15 @@
   &__link {
     color: $color-white;
     font: 18px $font_roman;
-    &:hover {
-      color: $color-yellow;
-    }
-    &:hover + .dropdown {
-      display: flex;
-    }
+
   }
   &__item {
     position: relative;
-
+    &:hover .header-nav__link {
+      color: $color-yellow;
+    }
+    &:hover .dropdown {
+      display: flex;
+    }
   }
 }

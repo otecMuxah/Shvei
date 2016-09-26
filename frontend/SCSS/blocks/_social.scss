@@ -1,0 +1,35 @@
+.social {
+    display: flex;
+    margin-bottom: 41px;
+    a {
+        display: block;
+    }
+    .facebook {
+        background-position: 0 -701px;
+        width: 15px;
+        height: 30px;
+    }
+    .twitter {
+        background-position: 0 -888px;
+        width: 34px;
+        height: 29px;
+    }
+    .google {
+        background-position: 0 -761px;
+        width: 30px;
+        height: 29px;
+    }
+    &__item {
+        width: 60px;
+        height: 60px;
+        border: 1px dotted $color-white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 42px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

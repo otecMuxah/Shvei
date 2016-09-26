@@ -1,0 +1,17 @@
+.footer-nav {
+    display: flex;
+    font-size: 24px;
+    &__link {
+        font-size: 24px;
+        color: $color-white;
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+    &__item {
+        margin-right: 63px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

@@ -1,3 +1,8 @@
+@mixin width-1400 {
+    @media screen and (max-width: $res_1400) {
+        @content;
+    }
+}
 @mixin desktop {
     @media screen and (max-width: $res_960) {
         @content;

@@ -31,7 +31,7 @@ $res_770:   770px;
 $res_960:   960px;
 $res_1100:  1100px;
 $res_1220:  1220px;
-$res_1440:  1440px;
+$res_1400:  1400px;
 
 //colors
 $color-dark-blue:       #140c3b;
@@ -51,7 +51,10 @@ $font_roman_bold: BodoniFLF-Bold, Arial, sans-serif;
 .header-basket__link,
 .checkbox__custom-checkbox,
 .to-basket,
-.more-info {
+.more-info,
+.facebook,
+.twitter,
+.google {
   background: url("../images/sprite.png") no-repeat;
 }
 
