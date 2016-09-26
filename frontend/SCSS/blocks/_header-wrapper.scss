@@ -30,6 +30,14 @@
     .header-wrapper {
         &:before,&:after {
             background: none;
+            z-index: 0;
+        }
+    }
+}
+@include width-1200 {
+    .header-wrapper {
+        &__inner {
+            width: 100%;
         }
     }
 }

@@ -19,3 +19,13 @@
     }
 
 }
+@include width-1200 {
+    .header{
+        margin: 0;
+        padding: 0;
+        &__logo {
+            margin-right: 0;
+        }
+    }
+
+}

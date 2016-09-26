@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin width-1200 {
+    @media screen and (max-width: $res_1220) {
+        @content;
+    }
+}
 @mixin desktop {
     @media screen and (max-width: $res_960) {
         @content;

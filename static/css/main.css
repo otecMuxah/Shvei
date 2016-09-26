@@ -128,6 +128,13 @@ body {
     margin-right: 48px;
     margin-top: 1px; }
 
+@media screen and (max-width: 1220px) {
+  .header {
+    margin: 0;
+    padding: 0; }
+    .header__logo {
+      margin-right: 0; } }
+
 .header-wrapper {
   width: 100%;
   position: relative;
@@ -153,7 +160,12 @@ body {
 
 @media screen and (max-width: 1400px) {
   .header-wrapper:before, .header-wrapper:after {
-    background: none; } }
+    background: none;
+    z-index: 0; } }
+
+@media screen and (max-width: 1220px) {
+  .header-wrapper__inner {
+    width: 100%; } }
 
 .header-nav {
   display: -webkit-box;
@@ -163,12 +175,14 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 37%;
-  margin-left: 25px; }
+  margin-left: 25px;
+  margin-top: 20px; }
   .header-nav__link {
     color: #fff;
     font: 18px BodoniFLF-Roman, Arial, sans-serif; }
   .header-nav__item {
-    position: relative; }
+    position: relative;
+    padding-bottom: 20px; }
     .header-nav__item:hover .header-nav__link {
       color: #e5bd62; }
     .header-nav__item:hover .dropdown {
@@ -295,12 +309,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     background: #140c3b;
     border-top: 1px gold solid;
     min-width: 100px;
-    height: 296px; }
+    z-index: 100; }
     .dropdown--header .dropdown__link {
       font-size: 14px;
       color: #fff; }
@@ -354,7 +366,10 @@ body {
   border-radius: 50%;
   height: 10px;
   width: 10px;
-  background: #b88d3a; }
+  background: #b88d3a;
+  cursor: pointer; }
+  .ui-slider .ui-slider-handle:active, .ui-slider .ui-slider-handle:focus {
+    outline: 0; }
 
 .ui-slider-horizontal {
   height: 1px;
@@ -373,7 +388,8 @@ body {
   margin-bottom: 51px; }
 
 .gallery {
-  width: 79.7%; }
+  width: 79.7%;
+  margin-left: 10px; }
   .gallery__sort {
     background: #0b311c;
     width: 100%;
@@ -770,6 +786,14 @@ body {
     color: #fff;
     padding: 36px 9999px 42px;
     margin: 0 -9999px; }
+
+@media screen and (max-width: 1220px) {
+  .footer__items {
+    padding: 65px 0;
+    margin: 0; }
+  .footer__copyright {
+    padding: 36px 0 42px;
+    margin: 0; } }
 
 .social {
   display: -webkit-box;

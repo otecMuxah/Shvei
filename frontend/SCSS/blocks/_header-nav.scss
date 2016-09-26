@@ -3,6 +3,7 @@
   justify-content: space-between;
   width: 37%;
   margin-left: 25px;
+  margin-top: 20px;
   &__link {
     color: $color-white;
     font: 18px $font_roman;
@@ -10,6 +11,7 @@
   }
   &__item {
     position: relative;
+    padding-bottom: 20px;
     &:hover .header-nav__link {
       color: $color-yellow;
     }

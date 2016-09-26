@@ -1,13 +1,20 @@
 .ui-slider .ui-slider-handle {
-        border-radius: 50%;
-        height: 10px;
-        width: 10px;
-        background: #b88d3a;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    background: #b88d3a;
+    cursor: pointer;
+    &:active,
+    &:focus {
+        outline: 0;
+    }
 }
+
 .ui-slider-horizontal {
     height: 1px;
     background: #cdcdcd;
 }
+
 .ui-slider-range {
     background: #b88d3a;
 }

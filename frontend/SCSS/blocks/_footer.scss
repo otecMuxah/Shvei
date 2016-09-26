@@ -23,3 +23,16 @@
         margin: 0 -9999px;
     }
 }
+
+@include width-1200 {
+    .footer {
+        &__items {
+            padding: 65px 0;
+            margin: 0;
+        }
+        &__copyright {
+            padding: 36px 0 42px;
+            margin: 0;
+        }
+    }
+}
