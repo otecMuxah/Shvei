@@ -98,10 +98,34 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 1198px;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  .wrapper--footer {
+    margin: 0 auto;
+    max-width: 1198px;
+    width: 100%; }
 
 .scroll-handler {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+
+.title {
+  text-transform: uppercase;
+  font: 24px/30px BodoniFLF-Bold, Arial, sans-serif;
+  color: #140c3b;
+  border-bottom: 4px solid #140c3b;
+  display: inline-block;
+  margin-bottom: 20px; }
 
 .header {
   background: #140c3b;
@@ -118,8 +142,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
-  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  position: relative; }
   .header__logo {
     text-indent: -9999px;
     background: url(../images/logo.png) no-repeat;
@@ -143,8 +166,7 @@ body {
 
 .header-wrapper {
   width: 100%;
-  position: relative;
-  margin-bottom: 51px; }
+  position: relative; }
   .header-wrapper:before, .header-wrapper:after {
     content: '';
     background: url("../images/header-bg.png") no-repeat;
@@ -411,6 +433,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 51px;
   margin-bottom: 51px; }
 
 @media screen and (max-width: 1220px) {
@@ -527,7 +550,10 @@ body {
       color: #e5bd62;
       margin-bottom: 20px; }
     .gallery__item .title {
-      margin-bottom: 2px; }
+      margin-bottom: 2px;
+      font: 20px Candara, Arial, sans-serif;
+      border: 0;
+      text-transform: none; }
   .gallery__modal {
     display: none;
     position: absolute;
@@ -901,3 +927,103 @@ body {
             flex-direction: column; }
     .footer-nav__item {
       margin: 0 0 20px; } }
+
+.about-us {
+  margin: 0 0 50px; }
+  .about-us__title {
+    background: #140c3b;
+    color: #e5bd62;
+    font-size: 32px;
+    margin: 0 -9999px;
+    padding: 50px 9999px;
+    text-align: center;
+    position: relative;
+    font-family: BodoniFLF-Bold, Arial, sans-serif;
+    margin-bottom: 50px; }
+
+.what-is {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px; }
+  .what-is__text {
+    font: 20px/26px Candara, Arial, sans-serif; }
+  .what-is__wrapper {
+    width: 60%; }
+  .what-is__image {
+    background: url(../images/machines.jpg) no-repeat;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    display: block;
+    background-size: contain;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+  .what-is__title {
+    margin-bottom: 20px; }
+
+.company-history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .company-history__image {
+    width: 320px;
+    height: 565px;
+    display: block;
+    background: url("../images/manikin.jpg") no-repeat;
+    background-size: cover;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    background-position: right; }
+    .company-history__image--second {
+      background: url("../images/scarf.jpg") no-repeat;
+      background-size: 176%; }
+  .company-history__title {
+    color: #e5bd62;
+    border-color: #e5bd62;
+    margin-bottom: 20px; }
+  .company-history__content {
+    background: #140c3b;
+    color: #fff;
+    margin: 5px 0;
+    padding: 10px; }
+  .company-history__text {
+    font: 20px Candara, Arial, sans-serif; }
+
+.contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+  .contact-us__contacts, .contact-us__manager {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 7%; }
+  .contact-us__contacts {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+                -ms-grid-row-align: flex-end;
+            align-items: flex-end;
+    padding-right: 80px;
+    text-align: right; }
+  .contact-us__manager {
+    background: #140c3b;
+    color: #fff;
+    padding: 7% 9999px 0 80px;
+    margin-right: -9999px; }
+    .contact-us__manager--title {
+      color: #fff;
+      border-color: #fff;
+      white-space: nowrap; }

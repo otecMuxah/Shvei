@@ -1,7 +1,7 @@
 .header-wrapper {
     width: 100%;
     position: relative;
-    margin-bottom: 51px;
+
     &:before,&:after {
         content: '';
         background: url("../images/header-bg.png") no-repeat;
