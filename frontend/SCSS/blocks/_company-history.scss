@@ -1,0 +1,30 @@
+.company-history {
+    display: flex;
+    &__image {
+        width: 320px;
+        height: 565px;
+        display: block;
+        background: url("../images/manikin.jpg") no-repeat;
+        background-size: cover;
+        flex-shrink: 0;
+        background-position: right;
+        &--second {
+            background: url("../images/scarf.jpg") no-repeat;
+            background-size: 176%;
+        }
+    }
+    &__title {
+        color: $color-yellow;
+        border-color: $color-yellow;
+        margin-bottom: 20px;
+    }
+    &__content {
+        background: $color-dark-blue;
+        color: $color-white;
+        margin: 5px 0;
+        padding: 10px;
+    }
+    &__text {
+        font: 20px $font;
+    }
+}

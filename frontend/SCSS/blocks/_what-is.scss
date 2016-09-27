@@ -1,0 +1,23 @@
+.what-is {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    &__text {
+       font: 20px/26px $font;
+    }
+    &__wrapper {
+        width: 60%;
+    }
+    &__image {
+        background: url(../images/machines.jpg) no-repeat;
+        width: 440px;
+        height: 440px;
+        border-radius: 50%;
+        display: block;
+        background-size: contain;
+        flex-shrink: 0;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+}

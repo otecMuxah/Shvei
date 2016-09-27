@@ -1,0 +1,14 @@
+.about-us {
+    margin: 0 0 50px;
+    &__title {
+        background: $color-dark-blue;
+        color: $color-yellow;
+        font-size: 32px;
+        margin: 0 -9999px;
+        padding: 50px 9999px;
+        text-align: center;
+        position: relative;
+        font-family: $font_roman_bold;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,28 @@
+.contact-us {
+    display: flex;
+    height: 100%;
+    &__contacts,
+    &__manager {
+        flex: 0 0 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding-top: 7%;
+    }
+    &__contacts {
+        align-items: flex-end;
+        padding-right: 80px;
+        text-align: right;
+    }
+    &__manager {
+        background: $color-dark-blue;
+        color: $color-white;
+        padding: 7% 9999px 0 80px;
+        margin-right: -9999px;
+        &--title {
+            color: $color-white;
+            border-color: $color-white;
+            white-space: nowrap;
+        }
+    }
+}
