@@ -4,9 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>About Us</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Registration Page</title>
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <script>
+        //        $(function () {
+        //            $("#slider-range").slider({
+        //                range: true,
+        //                min: 0,
+        //                max: 500,
+        //                values: [75, 300],
+        //                slide: function (event, ui) {
+        //                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        //                }
+        //            });
+        //            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+        //                    " - $" + $("#slider-range").slider("values", 1));
+        //
+        //            $(".arrow").on('click', function () {
+        //                $(this).closest('li').toggleClass('selected');
+        //            });
+        //
+        //            $(".more-info").on('click', function () {
+        //                $(this).closest('li').toggleClass('gallery__items--selected');
+        //            });
+        //            $(".product-card__close-icon").on('click', function () {
+        //                $(this).closest('li').toggleClass('gallery__items--selected');
+        //            });
+        //        });
+    </script>
 </head>
 
 <body>
@@ -41,7 +71,7 @@
                 </ul>
                 <a href="#" class="header__logo">MON COUTURIER.COM</a>
                 <ul class="header-basket">
-                    <li class="header-basket__item"><a href="register.html" class="header-basket__link">Register</a></li>
+                    <li class="header-basket__item"><a href="#" class="header-basket__link">Register</a></li>
                     <li class="header-basket__item"><a href="#" class="header-basket__link">Login</a></li>
                     <li class="header-basket__item basket"><a href="#" class="header-basket__link">Checkout
                         <span class="basket__counter">2</span>
@@ -63,64 +93,53 @@
                 <li class="user-tab__item"><a href="#" class="user-tab__link">Orders statistic</a></li>
             </ul>
         </div>
-        <div class="wrapper">
-            <div class="about-us">
-                <h1 class="about-us__title">Nous sommes pro et vous etes contents</h1>
-                <div class="about-us__body">
-                    <div class="what-is">
-                        <div class="what-is__wrapper">
-                            <h2 class="title what-is__title">What is Mon Couturier ?</h2>
-                            <p class="what-is__text">
-                                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-                                sem
-                                nibh id elit.
-                                <br>
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
-                                velit.
-                                <br>
-                                Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
-                                consequat
-                                auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                                per
-                                inceptos himenaeos.
-                                Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed
-                                non
-                                neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra,
-                                erat
-                                sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.
-                                Suspendisse in orci enim.
-                            </p>
-                        </div>
-                        <div class="what-is__image"></div>
-                    </div>
-                    <div class="company-history">
-                        <div class="company-history__image"></div>
-                        <div class="company-history__content">
-                            <div class="title company-history__title">history of development</div>
-                            <div class="company-history__text">
-                                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-                                sem
-                                nibh id elit.
-
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
-                                velit.
-
-                                Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
-                                consequat
-                                auctor eu in elit.
-                                .nostrainceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus
-                                condimentum
-                                sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum
-                                nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam
-                                massa nisl quis neque. Suspendisse in orci enim.
-                            </div>
-                        </div>
-                        <div class="company-history__image company-history__image--second"></div>
-                    </div>
+        <div class="wrapper wrapper--contacts">
+            <form class="register__wrapper">
+                <div class="register">
+                    <h2 class="register__title">Registration</h2>
+                    <ul class="register__list">
+                        <li class="register__item"><span>Username</span><input type="text"></li>
+                        <li class="register__item"><span>Password</span><input type="text"></li>
+                        <li class="register__item"><span>Confirm password</span><input type="text"></li>
+                        <li class="register__item">
+                            <label for="in-stock-check" class="checkbox">
+                                <span class="checkbox__text">Customer</span>
+                                <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                <span class="checkbox__custom-checkbox"></span>
+                            </label>
+                            <label for="custom-check" class="checkbox">
+                                <span class="checkbox__text">Seanstress</span>
+                                <input id="custom-check" type="checkbox" class="checkbox__input">
+                                <span class="checkbox__custom-checkbox"></span>
+                            </label>
+                        </li>
+                        <li class="register__item"><span>E-mail</span><input type="text"></li>
+                        <li class="register__item"><span>First name</span><input type="text"></li>
+                        <li class="register__item"><span>Last name</span><input type="text"></li>
+                    </ul>
                 </div>
-            </div>
+                <div class="register">
+                    <h2 class="register__title">Delivery address</h2>
+                    <ul class="register__list">
+                        <li class="register__item"><span>Country</span><input type="text"></li>
+                        <li class="register__item"><span>Region</span><input type="text"></li>
+                        <li class="register__item"><span>City</span><input type="text"></li>
+                        <li class="register__item"><span>Street</span><input type="text"></li>
+                        <li class="register__item"><span>House</span><input type="text"></li>
+                        <li class="register__item"><span>Comments</span><input type="text"></li>
+                        <li>
+                            <label for="custom-check" class="checkbox">
+                                <span class="checkbox__text">Seanstress</span>
+                                <input id="custom-check" type="checkbox" class="checkbox__input">
+                                <span class="checkbox__custom-checkbox"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button__holder">
+                    <a href="#" class="button">Register</a>
+                </div>
+            </form>
         </div>
     </div>
     <div class="wrapper--footer">
@@ -144,7 +163,6 @@
             <div class="footer__copyright">&copy Mon Couturier/All rights reserved</div>
         </footer>
     </div>
-
 </body>
 
 </html>

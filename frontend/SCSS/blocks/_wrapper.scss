@@ -2,7 +2,7 @@
     margin: 0 auto;
     max-width: 1198px;
     width: 100%;
-    height: 100%;
+
     &--footer {
         margin: 0 auto;
         max-width: 1198px;
@@ -11,6 +11,10 @@
     &--outer {
         position: relative;
         flex: 1;
+
+    }
+    &--contacts {
+        height: 100%;
     }
 }
 
