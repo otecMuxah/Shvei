@@ -1142,7 +1142,7 @@ body {
       background: #f8f400; }
 
 @media screen and (max-width: 1400px) {
-  .dialog-admin__wrapper {
+  .dialog-admin {
     padding-right: 35px; } }
 
 .product-in-chat {
