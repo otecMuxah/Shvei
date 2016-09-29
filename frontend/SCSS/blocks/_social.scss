@@ -3,33 +3,51 @@
     margin-bottom: 41px;
     a {
         display: block;
+        width: 59px;
+        height: 59px;
     }
     .facebook {
-        background-position: 0 -701px;
-        width: 15px;
-        height: 30px;
+        background-position: 0 -995px;
+
+        &:hover {
+            background-position: 0 -1237px;
+            animation: shaking .3s linear 2;
+        }
     }
     .twitter {
-        background-position: 0 -888px;
-        width: 34px;
-        height: 29px;
+        background-position: 0 -883px;
+        &:hover {
+            background-position:  0 -1152px;
+            animation: shaking .3s linear 2;
+        }
     }
     .google {
-        background-position: 0 -761px;
-        width: 30px;
-        height: 29px;
+        background-position:  0 -797px;
+        &:hover {
+            background-position: 0 -1074px;
+            animation: shaking .3s linear 2;
+        }
     }
     &__item {
-        width: 60px;
-        height: 60px;
-        border: 1px dotted $color-white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-right: 42px;
         &:last-child {
             margin: 0;
         }
     }
+}
+
+@keyframes shaking {
+
+    0%, 100% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
 }

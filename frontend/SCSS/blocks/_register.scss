@@ -19,11 +19,13 @@
         padding: 0 9999px;
         .button__holder {
             flex-basis: 100%;
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            max-height: 45px;
             .button {
                 display: inline-block;
-                float: right;
                 border: 1px solid $color-white;
+                margin-left: 50%;
             }
         }
     }
