@@ -42,4 +42,8 @@
             color: $color-yellow;
         }
     }
+    &__status {
+        display: flex;
+        justify-content: space-around;
+    }
 }

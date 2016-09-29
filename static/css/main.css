@@ -1112,7 +1112,8 @@ body {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    margin-bottom: 20px; }
     .dialog-admin__content--resolved {
       width: 100%;
       border: 0; }
@@ -1212,6 +1213,12 @@ body {
     color: #e5bd62; }
   .product-in-chat__text span {
     color: #e5bd62; }
+  .product-in-chat__status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
 .message-in-chat {
   position: relative;
