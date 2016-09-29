@@ -1,0 +1,38 @@
+.message-in-chat {
+    position: relative;
+    padding: 10px 10px 10px 100px;
+    &__date {
+        float: right;
+        color: $color-yellow;
+    }
+    &__name {
+        font-weight: 700;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    &__image {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        display: block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    &__input {
+        width: 100%;
+        border-top: 1px solid $color-yellow;
+        flex-basis: 100%;
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 0;
+            height: 85px;
+            &:active,
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+}

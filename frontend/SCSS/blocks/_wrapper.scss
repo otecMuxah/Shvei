@@ -8,6 +8,9 @@
         max-width: 1198px;
         width: 100%;
     }
+    &--outer {
+        position: relative;
+    }
 }
 
 .scroll-handler {

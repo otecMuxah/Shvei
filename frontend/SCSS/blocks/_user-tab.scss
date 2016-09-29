@@ -1,0 +1,67 @@
+.user-tab {
+    border: 1px solid $color-yellow;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: translate(91%,0);
+    padding-left: 30px;
+    background: $color-white;
+    transition: transform 0.2s linear;
+    &--selected {
+        padding: 20px;
+        transform: translate(0,0);
+        transition: transform 0.2s linear;
+        .user-tab__title {
+            margin-left: -20px;
+            padding-left: 20px;
+        }
+        .user-tab__shortcut {
+            display: none;
+        }
+    }
+    &__image {
+        position: static;
+        height: 140px;
+        width: 140px;
+    }
+    &__shortcut {
+        transform: rotate(270deg) translate(-46%, -813%);
+        width: 296px;
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+        &:after {
+            position: absolute;
+            top: 6px;
+            right: 35%;
+            content: '';
+            background-position: 0 -411px;
+            width: 10px;
+            height: 6px;
+            display: inline-block;
+            animation: usertab 1s infinite;
+        }
+    }
+    .product-card__close-icon {
+        top: 5px;
+        right: 5px;
+        color: $color-dark-blue;
+    }
+    &__link {
+        color: $color-dark-blue;
+        font-size: 20px;
+        padding: 10px;
+        display: inline-block;
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+}
+
+@keyframes usertab {
+    0% {transform: translate(0,0)}
+    50% {transform: translate(0,50%)}
+    100% {transform: translate(0,-50%)}
+
+}

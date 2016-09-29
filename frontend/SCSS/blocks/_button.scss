@@ -6,6 +6,8 @@
     border-radius: 18px;
     margin-right: 4px;
     cursor: pointer;
+    display: block;
+    white-space: nowrap;
     &:hover {
         background: $color-dark-green;
     }

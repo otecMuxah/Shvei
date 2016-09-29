@@ -54,7 +54,8 @@ $font_roman_bold: BodoniFLF-Bold, Arial, sans-serif;
 .more-info,
 .facebook,
 .twitter,
-.google {
+.google,
+.user-tab__shortcut:after {
   background: url("../images/sprite.png") no-repeat;
 }
 

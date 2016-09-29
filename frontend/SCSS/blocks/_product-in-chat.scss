@@ -1,0 +1,45 @@
+.product-in-chat {
+    font: 18px/23px $font;
+    border-bottom: 1px solid $color-yellow;
+    padding: 20px 40px 20px 0;
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__image {
+        height: 120px;
+        width: 100px;
+        background: url("../images/item-card1.png") no-repeat;
+        background-size: contain;
+        display: block;
+        flex-shrink: 0;
+    }
+    &__details {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__item {
+        &:last-child {
+            flex-basis: 100%;
+            text-transform: uppercase;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__text {
+        &--price {
+            font-size: 36px;
+            color: $color-yellow;
+        }
+        span {
+            color: $color-yellow;
+        }
+    }
+}

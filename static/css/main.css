@@ -23,7 +23,8 @@
 .more-info,
 .facebook,
 .twitter,
-.google {
+.google,
+.user-tab__shortcut:after {
   background: url("../images/sprite.png") no-repeat; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -106,6 +107,8 @@ body {
     margin: 0 auto;
     max-width: 1198px;
     width: 100%; }
+  .wrapper--outer {
+    position: relative; }
 
 .scroll-handler {
   overflow-x: hidden;
@@ -816,7 +819,9 @@ body {
   padding: 11px 11px 13px 15px;
   border-radius: 18px;
   margin-right: 4px;
-  cursor: pointer; }
+  cursor: pointer;
+  display: block;
+  white-space: nowrap; }
   .button:hover {
     background: #0b311c; }
   .button--float-right {
@@ -1027,3 +1032,276 @@ body {
       color: #fff;
       border-color: #fff;
       white-space: nowrap; }
+
+.dialog-admin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-top: 1px solid #e5bd62; }
+  .dialog-admin__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 90px; }
+  .dialog-admin__buttons-holder {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .dialog-admin__buttons--transparent {
+    background: transparent;
+    border: 1px solid #140c3b;
+    color: #140c3b; }
+    .dialog-admin__buttons--transparent:hover {
+      background: #140c3b;
+      color: #fff; }
+  .dialog-admin__buttons--square {
+    border-radius: 0;
+    background: #0b311c; }
+    .dialog-admin__buttons--square:hover {
+      background: #4e7760; }
+  .dialog-admin__vertical-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .dialog-admin__aside .dialog-admin__buttons-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .dialog-admin__aside .dialog-admin__buttons-holder .button {
+      margin-bottom: 30px; }
+  .dialog-admin__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px; }
+  .dialog-admin__inner-aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 10%;
+            flex: 0 1 10%; }
+  .dialog-admin__content-wrapper {
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%; }
+  .dialog-admin__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #e5bd62;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .dialog-admin__link {
+    color: #0b311c;
+    font-size: 20px;
+    padding: 15px;
+    display: inline-block; }
+    .dialog-admin__link:hover {
+      color: #e5bd62; }
+  .dialog-admin__item {
+    border-bottom: 1px solid #e5bd62; }
+    .dialog-admin__item:last-child {
+      border-bottom: 0; }
+  .dialog-admin .button__holder {
+    overflow: hidden; }
+    .dialog-admin .button__holder .button {
+      display: inline-block;
+      float: right; }
+  .dialog-admin__progress {
+    padding-left: 20px;
+    position: relative; }
+    .dialog-admin__progress:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 3px;
+      background: #145e35;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%; }
+    .dialog-admin__progress--notstarted:before {
+      background: #df0024; }
+    .dialog-admin__progress--onhold:before {
+      background: #f8f400; }
+
+@media screen and (max-width: 1400px) {
+  .dialog-admin__wrapper {
+    padding-right: 35px; } }
+
+.product-in-chat {
+  font: 18px/23px Candara, Arial, sans-serif;
+  border-bottom: 1px solid #e5bd62;
+  padding: 20px 40px 20px 0; }
+  .product-in-chat__title {
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .product-in-chat__image {
+    height: 120px;
+    width: 100px;
+    background: url("../images/item-card1.png") no-repeat;
+    background-size: contain;
+    display: block;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+  .product-in-chat__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .product-in-chat__item:last-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-transform: uppercase; }
+  .product-in-chat__item div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .product-in-chat__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .product-in-chat__text--price {
+    font-size: 36px;
+    color: #e5bd62; }
+  .product-in-chat__text span {
+    color: #e5bd62; }
+
+.message-in-chat {
+  position: relative;
+  padding: 10px 10px 10px 100px; }
+  .message-in-chat__date {
+    float: right;
+    color: #e5bd62; }
+  .message-in-chat__name {
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block; }
+  .message-in-chat__image {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; }
+  .message-in-chat__input {
+    width: 100%;
+    border-top: 1px solid #e5bd62;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    .message-in-chat__input textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 0;
+      height: 85px; }
+      .message-in-chat__input textarea:active, .message-in-chat__input textarea:focus {
+        outline: 0; }
+
+.user-tab {
+  border: 1px solid #e5bd62;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  -webkit-transform: translate(91%, 0);
+          transform: translate(91%, 0);
+  padding-left: 30px;
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+  .user-tab--selected {
+    padding: 20px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+    .user-tab--selected .user-tab__title {
+      margin-left: -20px;
+      padding-left: 20px; }
+    .user-tab--selected .user-tab__shortcut {
+      display: none; }
+  .user-tab__image {
+    position: static;
+    height: 140px;
+    width: 140px; }
+  .user-tab__shortcut {
+    -webkit-transform: rotate(270deg) translate(-46%, -813%);
+            transform: rotate(270deg) translate(-46%, -813%);
+    width: 296px;
+    position: relative;
+    cursor: pointer;
+    text-align: center; }
+    .user-tab__shortcut:after {
+      position: absolute;
+      top: 6px;
+      right: 35%;
+      content: '';
+      background-position: 0 -411px;
+      width: 10px;
+      height: 6px;
+      display: inline-block;
+      -webkit-animation: usertab 1s infinite;
+              animation: usertab 1s infinite; }
+  .user-tab .product-card__close-icon {
+    top: 5px;
+    right: 5px;
+    color: #140c3b; }
+  .user-tab__link {
+    color: #140c3b;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block; }
+    .user-tab__link:hover {
+      color: #e5bd62; }
+
+@-webkit-keyframes usertab {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%); }
+  100% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); } }
+
+@keyframes usertab {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%); }
+  100% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); } }
