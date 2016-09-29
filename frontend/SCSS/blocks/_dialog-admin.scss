@@ -38,7 +38,7 @@
         flex-direction: column;
     }
     &__aside {
-
+        flex: 0 1 10%;
 
         .dialog-admin__buttons-holder {
             flex-direction: column;
@@ -65,6 +65,19 @@
         border: 1px solid $color-yellow;
         flex-wrap: wrap;
         justify-content: space-between;
+        &--resolved {
+            width: 100%;
+            border: 0;
+            .dialog-admin__content {
+                flex: 0 1 85%;
+            }
+            .dialog-admin__content-wrapper {
+                flex-basis: 100%;
+            }
+            .product-in-chat {
+                padding: 20px 40px;
+            }
+        }
     }
     &__link {
         color: $color-dark-green;
@@ -114,6 +127,11 @@
 
         }
     }
+}
+
+#tab-resolved {
+    display: none;
+    width: 100%;
 }
 
 @include width-1400 {

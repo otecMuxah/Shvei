@@ -1,14 +1,20 @@
 .user-tab {
     border: 1px solid $color-yellow;
-    display: inline-block;
     position: absolute;
     right: 0;
     top: 0;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
     transform: translate(91%,0);
     padding-left: 30px;
     background: $color-white;
     transition: transform 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &--selected {
+        cursor: auto;
         padding: 20px;
         transform: translate(0,0);
         transition: transform 0.2s linear;

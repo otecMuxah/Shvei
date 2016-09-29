@@ -100,15 +100,16 @@ body {
   margin: 0 auto;
   max-width: 1198px;
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  height: 100%; }
   .wrapper--footer {
     margin: 0 auto;
     max-width: 1198px;
     width: 100%; }
   .wrapper--outer {
-    position: relative; }
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
 
 .scroll-handler {
   overflow-x: hidden;
@@ -1075,17 +1076,21 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .dialog-admin__aside .dialog-admin__buttons-holder {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-    .dialog-admin__aside .dialog-admin__buttons-holder .button {
-      margin-bottom: 30px; }
+  .dialog-admin__aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 10%;
+            flex: 0 1 10%; }
+    .dialog-admin__aside .dialog-admin__buttons-holder {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 100%;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      .dialog-admin__aside .dialog-admin__buttons-holder .button {
+        margin-bottom: 30px; }
   .dialog-admin__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1108,6 +1113,18 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .dialog-admin__content--resolved {
+      width: 100%;
+      border: 0; }
+      .dialog-admin__content--resolved .dialog-admin__content {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 85%;
+                flex: 0 1 85%; }
+      .dialog-admin__content--resolved .dialog-admin__content-wrapper {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+      .dialog-admin__content--resolved .product-in-chat {
+        padding: 20px 40px; }
   .dialog-admin__link {
     color: #0b311c;
     font-size: 20px;
@@ -1140,6 +1157,10 @@ body {
       background: #df0024; }
     .dialog-admin__progress--onhold:before {
       background: #f8f400; }
+
+#tab-resolved {
+  display: none;
+  width: 100%; }
 
 @media screen and (max-width: 1400px) {
   .dialog-admin {
@@ -1225,10 +1246,12 @@ body {
 
 .user-tab {
   border: 1px solid #e5bd62;
-  display: inline-block;
   position: absolute;
   right: 0;
   top: 0;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
   -webkit-transform: translate(91%, 0);
           transform: translate(91%, 0);
   padding-left: 30px;
@@ -1236,8 +1259,19 @@ body {
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .user-tab--selected {
+    cursor: auto;
     padding: 20px;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
