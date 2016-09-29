@@ -1143,7 +1143,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   .dialog-admin {
-    padding-right: 35px; } }
+    margin-right: 35px; } }
 
 .product-in-chat {
   font: 18px/23px Candara, Arial, sans-serif;
@@ -1228,7 +1228,7 @@ body {
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 4%;
+  top: 0;
   -webkit-transform: translate(91%, 0);
           transform: translate(91%, 0);
   padding-left: 30px;
