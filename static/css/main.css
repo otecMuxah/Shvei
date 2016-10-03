@@ -125,6 +125,10 @@ body {
           flex-direction: column;
   height: 100%; }
 
+@media screen and (max-width: 1400px) {
+  .wrapper--outer {
+    padding-right: 40px; } }
+
 .title {
   text-transform: uppercase;
   font: 24px/30px BodoniFLF-Bold, Arial, sans-serif;
@@ -1417,7 +1421,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
+  min-height: 100%;
   box-sizing: border-box;
   cursor: pointer;
   -webkit-transform: translate(91%, 0);

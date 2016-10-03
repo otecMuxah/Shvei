@@ -25,3 +25,11 @@
     flex-direction: column;
     height: 100%;
 }
+
+@include width-1400 {
+    .wrapper {
+        &--outer {
+            padding-right: 40px;
+        }
+    }
+}
