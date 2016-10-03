@@ -1,5 +1,6 @@
 .company-history {
     display: flex;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     &__image {
         width: 320px;
         height: 565px;
@@ -8,6 +9,7 @@
         background-size: cover;
         flex-shrink: 0;
         background-position: right;
+
         &--second {
             background: url("../images/scarf.jpg") no-repeat;
             background-size: 176%;
@@ -21,7 +23,6 @@
     &__content {
         background: $color-dark-blue;
         color: $color-white;
-        margin: 5px 0;
         padding: 10px;
     }
     &__text {

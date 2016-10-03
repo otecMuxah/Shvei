@@ -45,6 +45,10 @@ $(document).ready(function(){
 
         $(".product-card__close-icon").on('click', function () {
             $(this).closest('li').toggleClass('gallery__items--selected');
+            $(this).closest('.buttons-holder').toggleClass('buttons-holder--selected');
+        });
+        $("#add-new-product-button").on('click', function () {
+            $(this).closest('.buttons-holder').toggleClass('buttons-holder--selected');
         });
     });
 

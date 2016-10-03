@@ -10,7 +10,7 @@
         align-items: center;
 
         margin-bottom: 37px;
-        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
         padding: 0 0 0 26px;
         box-sizing: border-box;
         .gallery__title {
@@ -30,7 +30,7 @@
     &__items {
         margin-bottom: 41px;
         position: relative;
-        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
         .availability {
             position: absolute;
             top: 5px;
@@ -92,7 +92,6 @@
             text-transform: none;
         }
 
-
     }
     &__modal {
         display: none;
@@ -101,7 +100,7 @@
         left: 1px;
         width: 219px;
         height: 261px;
-        background: rgba(255,255,255,0.7);
+        background: rgba(255, 255, 255, 0.7);
         align-items: center;
         justify-content: center;
         .to-basket,
@@ -111,15 +110,49 @@
             height: 51px;
             display: block;
             cursor: pointer;
+            &:hover {
+                animation: shaking .3s linear 2;
+            }
         }
         .to-basket {
-            background-position:  0 -479px;
+            background-position: 0 -479px;
             margin-right: 25px;
         }
         .more-info {
-            background-position:  0 -562px;
+            background-position: 0 -562px;
         }
     }
+    .button--icon {
+        border-color: $color-dark-green;
+        span {
+            color: $color-dark-green;
+        }
+
+        svg {
+            path {
+                fill: $color-dark-green;
+            }
+        }
+    }
+    .buttons-holder {
+        margin-bottom: 30px;
+    }
+}
+
+@keyframes shaking {
+
+    0%, 100% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
 }
 
 @include width-1200 {
@@ -129,6 +162,7 @@
         }
     }
 }
+
 @include phone {
     .gallery {
         width: 100%;

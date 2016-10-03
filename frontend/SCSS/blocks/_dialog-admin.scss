@@ -66,9 +66,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 20px;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.09);
         &--resolved {
             width: 100%;
             border: 0;
+            box-shadow: none;
             .dialog-admin__content {
                 flex: 0 1 85%;
             }

@@ -6,12 +6,68 @@
     border-radius: 18px;
     margin-right: 4px;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     white-space: nowrap;
     &:hover {
         background: $color-dark-green;
     }
     &--float-right {
         float: right;
+    }
+    &--red {
+        background: darken(#FF1300,30%);
+        transition: all 150ms linear;
+        &:hover {
+            background: #FF1300;
+            transition: all 150ms linear;
+        }
+    }
+    &--green {
+        background: darken(#4CD964,30%);
+        transition: all 150ms linear;
+        &:hover {
+            background: #4CD964;
+            transition: all 150ms linear;
+        }
+    }
+    &--icon {
+        background: none;
+        border: 1px solid $color-white;
+        &:hover {
+            background: none;
+            svg {
+                animation: hvr-icon-pulse-grow 0.3s linear infinite;
+                animation-direction: alternate;
+            }
+        }
+        span {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        svg {
+            path {
+                fill: $color-white;
+            }
+            display: inline-block;
+            vertical-align: middle;
+            transition-timing-function: ease-out;
+            transform: translateZ(0);
+        }
+    }
+
+}
+.buttons-holder {
+    display: inline-block;
+    width: 100%;
+    &--selected {
+        .product-card--new-product {
+            display: flex;
+        }
+    }
+}
+@keyframes hvr-icon-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
 }

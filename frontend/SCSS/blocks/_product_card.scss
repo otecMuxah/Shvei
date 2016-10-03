@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
+
     &__wrapper {
         width: 710px;
         height: 555px;
@@ -117,6 +118,14 @@
                 text-align: center;
 
             }
+        }
+    }
+    &--new-product {
+        .product-card__title {
+            display: inline-block;
+        }
+        .product-details .price {
+            display: inline-block;
         }
     }
 }

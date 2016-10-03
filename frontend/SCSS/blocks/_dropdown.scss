@@ -17,13 +17,11 @@
         left: -12px;
         top: 36px;
         padding: 13px 0 0;
-        flex-direction: column;
-        //flex-wrap: wrap;
         background: $color-dark-blue;
         border-top: 1px gold solid;
         min-width: 100px;
-        //height: 296px;
         z-index: 100;
+        column-count: 2;
         .dropdown__link {
             font-size: 14px;
             color: $color-white;

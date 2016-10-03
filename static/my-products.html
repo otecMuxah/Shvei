@@ -14,6 +14,20 @@
 </head>
 
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="plus-icon" viewBox="0 0 27.333 27.167">
+        <g>
+            <g>
+                <path d="M14.765,5.937v6.829h6.567v1.745h-6.567v6.887h-1.861v-6.887h-6.57v-1.745h6.57V5.937H14.765z"/>
+            </g>
+            <g>
+                <path d="M13.833,27.167c-7.444,0-13.5-6.056-13.5-13.5s6.056-13.5,13.5-13.5s13.5,6.056,13.5,13.5
+                                            S21.277,27.167,13.833,27.167z M13.833,2.03c-6.417,0-11.638,5.221-11.638,11.638s5.221,11.638,11.638,11.638
+                                            s11.638-5.221,11.638-11.639S20.25,2.03,13.833,2.03z"/>
+            </g>
+        </g>
+    </symbol>
+</svg>
 <div class="scroll-handler">
     <div class="header-wrapper">
         <div class="header-wrapper__inner">
@@ -172,6 +186,161 @@
                     <div class="gallery__sort">
                         <span class="gallery__title">default sorting <span class="arrow"></span></span>
                     </div>
+                    <div class="buttons-holder">
+                        <a href="#" id="add-new-product-button" class="button button--icon button--float-right"><span>Add Product</span>
+                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="27.333px" height="27.167px" viewBox="0 0 27.333 27.167" enable-background="new 0 0 27.333 27.167" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M14.765,5.937v6.829h6.567v1.745h-6.567v6.887h-1.861v-6.887h-6.57v-1.745h6.57V5.937H14.765z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M13.833,27.167c-7.444,0-13.5-6.056-13.5-13.5s6.056-13.5,13.5-13.5s13.5,6.056,13.5,13.5
+                                            S21.277,27.167,13.833,27.167z M13.833,2.03c-6.417,0-11.638,5.221-11.638,11.638s5.221,11.638,11.638,11.638
+                                            s11.638-5.221,11.638-11.639S20.25,2.03,13.833,2.03z"/>
+                                    </g>
+                                </g>
+                                </svg>
+                        </a>
+                        <div class="product-card product-card--new-product add-product">
+                            <div class="product-card__wrapper">
+                                <div class="product-card__close-icon">X</div>
+                                <div class="image-continer">
+                                    <h2 class="product-card__title">Add Image</h2>
+                                    <svg class="add-product__add-image add-product__add-image--big">
+                                        <use xlink:href="#plus-icon"></use>
+                                    </svg>
+                                    <svg class="add-product__add-image add-product__add-image--small">
+                                        <use xlink:href="#plus-icon"></use>
+                                    </svg>
+                                    <svg class="add-product__add-image add-product__add-image--small">
+                                        <use xlink:href="#plus-icon"></use>
+                                    </svg>
+                                    <svg class="add-product__add-image add-product__add-image--small">
+                                        <use xlink:href="#plus-icon"></use>
+                                    </svg>
+                                </div>
+                                <div class="product-details">
+                                    <div class="add-product__wrapper">
+                                        <ul class="add-product__list">
+                                            <li class="add-product__item">
+                                                <span>Title:</span><input type="text">
+                                            </li>
+                                            <li class="add-product__item">
+                                                <span>Price :</span><input type="text">
+                                            </li>
+                                            <li class="add-product__item">
+                                                <span>Gender: </span>
+                                                <select name="add-product--gender" id="gender" class="add-product__select">
+                                                    <option value="1">Male</option>
+                                                    <option value="2">Female</option>
+                                                </select>
+                                            </li>
+                                            <li class="add-product__item">
+                                                <span>Category :</span>
+                                                <select name="add-product--category" id="category" class="add-product__select">
+                                                    <option value="1">Jeans</option>
+                                                    <option value="2">T-Shirt</option>
+                                                    <option value="1">Jeans</option>
+                                                    <option value="2">T-Shirt</option>
+                                                    <option value="1">Jeans</option>
+                                                    <option value="2">T-Shirt</option>
+                                                </select>
+                                            </li>
+                                            <li class="add-product__item">
+                                                <span>Description:</span>
+                                                <textarea name="product-description" id="product-description" cols="30" rows="5"></textarea>
+                                            </li>
+                                            <li class="add-product__item">
+                                                <span>Colors :</span>
+                                                <ul class="add-product__colors">
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">Black</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">White</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">Red</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="add-product__item">
+                                                <span>Sizes :</span>
+                                                <ul class="add-product__colors">
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">XS</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">S</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">M</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">L</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">XL</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="in-stock-check" class="checkbox">
+                                                            <span class="checkbox__text">XXL</span>
+                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <span class="checkbox__custom-checkbox"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="add-product__item">
+                                                <select name="add-product--available" id="add-product--available" class="add-product__select">
+                                                    <option value="1">In-Stock</option>
+                                                    <option value="2">Custom Tailoring</option>
+                                                </select>
+                                            </li>
+
+                                        </ul>
+
+
+                                    </div>
+
+                                    <span class="button button--float-right">Publish</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <ul class="gallery__list">
                         <li class="gallery__items">
                             <div class="gallery__item">
@@ -182,6 +351,7 @@
                                 <span class="to-basket"></span>
                                 <span class="more-info"></span>
                             </div>
+                            <!--Start of Product Info Block-->
                             <div class="product-card">
                                 <div class="product-card__wrapper">
                                     <div class="product-card__close-icon">X</div>

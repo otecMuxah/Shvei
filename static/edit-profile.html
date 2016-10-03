@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Terms & Conditions</title>
+    <title>Edit Profile</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="scripts/jquery-3.1.0.min.js"></script>
     <script src="scripts/main.js"></script>
@@ -42,7 +44,7 @@
                 </ul>
                 <a href="#" class="header__logo">MON COUTURIER.COM</a>
                 <ul class="header-basket">
-                    <li class="header-basket__item"><a href="register.html" class="header-basket__link">Register</a></li>
+                    <li class="header-basket__item"><a href="#" class="header-basket__link">Register</a></li>
                     <li class="header-basket__item"><a href="#" class="header-basket__link">Login</a></li>
                     <li class="header-basket__item basket"><a href="#" class="header-basket__link">Checkout
                         <span class="basket__counter">2</span>
@@ -65,9 +67,79 @@
             </ul>
         </div>
         <div class="wrapper wrapper--contacts">
-            <div class="terms-conditions">
-                <h1 class="terms-conditions__title">Terms & Conditions</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet harum iusto nihil nostrum quia repudiandae similique? Adipisci est exercitationem facilis fugiat ipsum nihil perspiciatis quia. Laboriosam officiis repellendus vel.</p>
+            <div class="register__wrapper">
+                <div class="user-profile">
+                    <h1 class="register__title user-profile__title user-profile__title--centered">User Profile</h1>
+                    <div class="user-profile__wrapper user-profile__wrapper--edit">
+                        <div class="user-profile__image-wrapper">
+                            <img src="images/manager.jpg" alt="" class="user-profile__image">
+                            <a href="#" class="button button--icon"><span>Add Avatar</span>
+                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="27.333px" height="27.167px" viewBox="0 0 27.333 27.167" enable-background="new 0 0 27.333 27.167" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M14.765,5.937v6.829h6.567v1.745h-6.567v6.887h-1.861v-6.887h-6.57v-1.745h6.57V5.937H14.765z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M13.833,27.167c-7.444,0-13.5-6.056-13.5-13.5s6.056-13.5,13.5-13.5s13.5,6.056,13.5,13.5
+                                            S21.277,27.167,13.833,27.167z M13.833,2.03c-6.417,0-11.638,5.221-11.638,11.638s5.221,11.638,11.638,11.638
+                                            s11.638-5.221,11.638-11.639S20.25,2.03,13.833,2.03z"/>
+                                    </g>
+                                </g>
+                                </svg>
+
+                            </a>
+                        </div>
+                        <div class="user-profile__fields">
+
+                            <ul class="user-profile__list register__list">
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">Username</span>
+                                    <input type="text" class="user-profile__input" value="Petitami">
+                                </li>
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">E-mail</span>
+                                    <input type="text" class="user-profile__input" value="name@gmail.com">
+                                </li>
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">First Name</span>
+                                    <input type="text" class="user-profile__input" value="Pier">
+                                </li>
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">Last Name</span>
+                                    <input type="text" class="user-profile__input" value="Rishar">
+                                </li>
+                            </ul>
+                            <h2 class="register__title user-profile__title ">Delivery address</h2>
+                            <ul class="user-profile__list register__list">
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">Country</span>
+                                    <input type="text" class="user-profile__input" value="France">
+                                </li>
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">Region</span>
+                                    <input type="text" class="user-profile__input" value="Burgundy">
+                                </li>
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">City</span>
+                                    <input type="text" class="user-profile__input" value="Dijon">
+                                </li>
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">Street</span>
+                                    <input type="text" class="user-profile__input" value="nue Boussuet">
+                                </li>
+                                <li class="user-profile__item">
+                                    <span class="user-profile__name">House №</span>
+                                    <input type="text" class="user-profile__input" value="40">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="buttons-holder--noflex">
+                        <a href="#" class="button button--green button--float-right">Save</a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -92,7 +164,6 @@
             <div class="footer__copyright">&copy Mon Couturier/All rights reserved</div>
         </footer>
     </div>
-
 </body>
 
 </html>

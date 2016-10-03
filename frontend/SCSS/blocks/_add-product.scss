@@ -1,0 +1,58 @@
+.add-product {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        span {
+            margin: 0;
+        }
+        textarea {
+            max-width: 250px;
+        }
+    }
+    &__colors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 250px;
+        width: 100%;
+        .checkbox__text {
+            margin-right: 10px;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+    }
+    &__add-image {
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &--big {
+            fill: $color-dark-green;
+            width: 285px;
+            height: 285px;
+            transition: all 0.2s ease;
+            &:hover {
+                fill: $color-yellow;
+                transition: all 0.2s ease;
+            }
+        }
+        &--small {
+            fill: $color-dark-green;
+            width: 90px;
+            height: 90px;
+            transition: all 0.2s ease;
+            &:hover {
+                fill: $color-yellow;
+                transition: all 0.2s ease;
+            }
+        }
+    }
+    .product-card__wrapper{
+        height: auto;
+    }
+
+}
+
+
