@@ -2,10 +2,7 @@
     padding: 10px 0 10px 21px;
     display: none;
     flex-direction: column;
-    &__link {
-        font: 20px $font;
-        color: $color-dark-green;
-    }
+
     &__item {
         margin-bottom: 16px;
         &:last-child {
@@ -31,6 +28,13 @@
             margin-bottom: 20px;
             min-width: 100px;
             box-sizing: border-box;
+        }
+    }
+    &__link {
+        font: 20px $font;
+        color: $color-dark-green;
+        &:hover {
+            color: $color-yellow;
         }
     }
     .selected & {

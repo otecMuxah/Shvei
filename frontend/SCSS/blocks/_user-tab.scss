@@ -13,7 +13,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 2;
+    z-index: 20;
+    &__item {
+        position: relative;
+        &:hover {
+            .dropdown {
+                display: block;
+            }
+        }
+
+    }
     &--selected {
         cursor: auto;
         padding: 20px;

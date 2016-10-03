@@ -59,9 +59,10 @@
                 </ul>
                 <a href="#" class="header__logo">MON COUTURIER.COM</a>
                 <ul class="header-basket">
-                    <li class="header-basket__item"><a href="register.html" class="header-basket__link">Register</a></li>
+                    <li class="header-basket__item"><a href="register.html" class="header-basket__link">Register</a>
+                    </li>
                     <li class="header-basket__item"><a href="#" class="header-basket__link">Login</a></li>
-                    <li class="header-basket__item basket"><a href="#" class="header-basket__link">Checkout
+                    <li class="header-basket__item basket"><a href="checkout.html" class="header-basket__link">Checkout
                         <span class="basket__counter">2</span>
                     </a></li>
                 </ul>
@@ -85,7 +86,9 @@
                 </li>
                 <li class="user-tab__item"><a href="index.html" class="user-tab__link">Catalogue</a></li>
                 <li class="user-tab__item"><a href="dialog-admin.html" class="user-tab__link">Orders</a></li>
-                <li class="user-tab__item"><a href="#" class="user-tab__link">Orders statistic</a></li>
+                <li class="user-tab__item"><a href="my-products.html" class="user-tab__link">My products</a></li>
+                <li class="user-tab__item"><a href="publications.html" class="user-tab__link">Publications</a></li>
+                <li class="user-tab__item"><a href="order-statistic.html" class="user-tab__link">Orders statistic</a></li>
             </ul>
         </div>
         <div class="wrapper">
@@ -231,14 +234,16 @@
                                             </li>
                                             <li class="add-product__item">
                                                 <span>Gender: </span>
-                                                <select name="add-product--gender" id="gender" class="add-product__select">
+                                                <select name="add-product--gender" id="gender"
+                                                        class="add-product__select">
                                                     <option value="1">Male</option>
                                                     <option value="2">Female</option>
                                                 </select>
                                             </li>
                                             <li class="add-product__item">
                                                 <span>Category :</span>
-                                                <select name="add-product--category" id="category" class="add-product__select">
+                                                <select name="add-product--category" id="category"
+                                                        class="add-product__select">
                                                     <option value="1">Jeans</option>
                                                     <option value="2">T-Shirt</option>
                                                     <option value="1">Jeans</option>
@@ -249,7 +254,8 @@
                                             </li>
                                             <li class="add-product__item">
                                                 <span>Description:</span>
-                                                <textarea name="product-description" id="product-description" cols="30" rows="5"></textarea>
+                                                <textarea name="product-description" id="product-description" cols="30"
+                                                          rows="5"></textarea>
                                             </li>
                                             <li class="add-product__item">
                                                 <span>Colors :</span>
@@ -257,21 +263,24 @@
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">Black</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">White</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">Red</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
@@ -283,59 +292,62 @@
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">XS</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">S</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">M</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">L</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">XL</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="in-stock-check" class="checkbox">
                                                             <span class="checkbox__text">XXL</span>
-                                                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                                            <input id="in-stock-check" type="checkbox"
+                                                                   class="checkbox__input">
                                                             <span class="checkbox__custom-checkbox"></span>
                                                         </label>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li class="add-product__item">
-                                                <select name="add-product--available" id="add-product--available" class="add-product__select">
+                                                <select name="add-product--available" id="add-product--available"
+                                                        class="add-product__select">
                                                     <option value="1">In-Stock</option>
                                                     <option value="2">Custom Tailoring</option>
                                                 </select>
                                             </li>
-
                                         </ul>
-
-
                                     </div>
-
                                     <span class="button button--float-right">Publish</span>
                                 </div>
                             </div>
@@ -348,11 +360,11 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                             <!--Start of Product Info Block-->
-                            <div class="product-card">
+                            <div class="product-card" id="product-card">
                                 <div class="product-card__wrapper">
                                     <div class="product-card__close-icon">X</div>
                                     <div class="image-continer">
@@ -396,7 +408,50 @@
                                             <input type="text" value="1">
                                             <span class="more">></span>
                                         </div>
-                                        <span class="button button--float-right">Add to cart</span>
+                                        <!--<span class="button button&#45;&#45;float-right">Edit Info</span>-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card product-card--edit-product">
+                                <div class="product-card__wrapper">
+                                    <div class="product-card__close-icon--edit">X</div>
+                                    <div class="image-continer">
+                                        <img src="images/item-card1.png" alt="" class="big-image">
+                                        <img src="images/item-card1.png" alt="" class="small-img">
+                                        <img src="images/item-card1.png" alt="" class="small-img">
+                                        <svg class="add-product__add-image add-product__add-image--small">
+                                            <use xlink:href="#plus-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="product-details__small-wrapper">
+                                            <span>Title :</span><input type="text">
+                                        </div>
+                                        <div class="product-details__small-wrapper">
+                                            <span>Price :</span><input type="text">
+                                        </div>
+
+                                        <span class="type">Shirt</span>
+                                        <span class="gender">Women</span>
+                                        <div class="product-details__small-wrapper">
+                                            <span>Description</span>
+                                            <textarea id="" cols="30" rows="10"></textarea>
+                                        </div>
+
+                                        <div class="product-details__small-wrapper">
+                                            <span>Colors :</span><input type="text">
+                                        </div>
+
+                                        <div class="product-details__small-wrapper">
+                                            <span>Sizes :</span><input type="text">
+                                        </div>
+                                        <select name="add-product--available" id="add-product--available"
+                                                class="add-product__select">
+                                            <option value="1">In-Stock</option>
+                                            <option value="2">Custom Tailoring</option>
+                                        </select>
+                                        <span class="button button--float-right">Save</span>
                                     </div>
                                 </div>
                             </div>
@@ -408,7 +463,7 @@
                                 <span class="price">75$</span></div>
                             <span class="availability">custom</span>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -427,7 +482,7 @@
                                 </ul>
                             </div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -437,7 +492,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -447,7 +502,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -457,7 +512,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -467,7 +522,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -477,7 +532,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -487,7 +542,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -497,7 +552,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -507,7 +562,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>
@@ -517,7 +572,7 @@
                                 <span class="title">Shirt with stripes</span>
                                 <span class="price">75$</span></div>
                             <div class="gallery__modal">
-                                <span class="to-basket"></span>
+                                <span class="edit-product"></span>
                                 <span class="more-info"></span>
                             </div>
                         </li>

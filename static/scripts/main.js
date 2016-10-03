@@ -42,7 +42,12 @@ $(document).ready(function(){
         $(".more-info").on('click', function () {
             $(this).closest('li').toggleClass('gallery__items--selected');
         });
-
+        $(".edit-product").on('click', function () {
+            $(this).closest('li').toggleClass('gallery__items--active');
+        });
+        $(".product-card__close-icon--edit").on('click', function () {
+            $(this).closest('li').toggleClass('gallery__items--active');
+        });
         $(".product-card__close-icon").on('click', function () {
             $(this).closest('li').toggleClass('gallery__items--selected');
             $(this).closest('.buttons-holder').toggleClass('buttons-holder--selected');

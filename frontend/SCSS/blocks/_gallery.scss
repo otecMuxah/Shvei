@@ -58,7 +58,12 @@
             }
         }
         &--selected {
-            .product-card {
+            #product-card {
+                display: flex;
+            }
+        }
+        &--active {
+            .product-card--edit-product {
                 display: flex;
             }
         }
@@ -104,7 +109,8 @@
         align-items: center;
         justify-content: center;
         .to-basket,
-        .more-info {
+        .more-info,
+        .edit-product {
             margin-top: -5px;
             width: 51px;
             height: 51px;
@@ -113,6 +119,10 @@
             &:hover {
                 animation: shaking .3s linear 2;
             }
+        }
+        .edit-product {
+            background-position:  0 -1329px;
+            margin-right: 25px;
         }
         .to-basket {
             background-position: 0 -479px;

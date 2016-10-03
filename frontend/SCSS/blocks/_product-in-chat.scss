@@ -40,10 +40,14 @@
         }
         span {
             color: $color-yellow;
+            margin-right: 5px;
         }
     }
     &__status {
         display: flex;
         justify-content: space-around;
+    }
+    &__description {
+        margin-bottom: 20px;
     }
 }

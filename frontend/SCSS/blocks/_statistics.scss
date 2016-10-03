@@ -1,0 +1,25 @@
+.statistics {
+    margin-top: 40px;
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+        caption {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        tr,
+        th {
+            border: 1px solid $color-dark-blue;
+            padding: 15px 5px;
+            text-align: center;
+        }
+        td {
+            padding: 15px 5px;
+        }
+        th {
+            background: $color-dark-blue;
+            color: $color-white;
+        }
+
+    }
+}
