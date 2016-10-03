@@ -1,0 +1,16 @@
+.users {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .gallery__item img {
+        width: 200px;
+        height: auto;
+    }
+    .gallery__item .title {
+        margin-bottom: 20px;
+    }
+    .gallery__modal {
+        width: 100%;
+        height: 100%;
+    }
+}
