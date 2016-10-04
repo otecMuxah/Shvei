@@ -40,4 +40,17 @@
         height: 30px;
         padding: 0 5px;
     }
+    .checkbox__custom-checkbox {
+        background-position: 0 -1439px;
+    }
+    .checkbox {
+        &__input {
+            &:checked + .checkbox__custom-checkbox {
+                background-position: 0 -1393px;
+            }
+        }
+        &__text {
+            margin-right: 20px;
+        }
+    }
 }

@@ -1570,6 +1570,12 @@ body {
   .register input {
     height: 30px;
     padding: 0 5px; }
+  .register .checkbox__custom-checkbox {
+    background-position: 0 -1439px; }
+  .register .checkbox__input:checked + .checkbox__custom-checkbox {
+    background-position: 0 -1393px; }
+  .register .checkbox__text {
+    margin-right: 20px; }
 
 .terms-conditions {
   display: -webkit-box;
