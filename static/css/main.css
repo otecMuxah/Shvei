@@ -1528,6 +1528,8 @@ body {
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 20px; }
+    .register__title--centered {
+      text-align: center; }
   .register__wrapper {
     height: 100%;
     display: -webkit-box;
@@ -1556,6 +1558,10 @@ body {
         display: inline-block;
         border: 1px solid #fff;
         margin-left: 50%; }
+        .register__wrapper .button__holder .button--centered {
+          margin-left: 0; }
+  .register__list {
+    margin-bottom: 20px; }
   .register__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1576,6 +1582,11 @@ body {
     background-position: 0 -1393px; }
   .register .checkbox__text {
     margin-right: 20px; }
+  .register .forget {
+    font: 16px Candara, Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+    display: inline-block; }
 
 .terms-conditions {
   display: -webkit-box;
