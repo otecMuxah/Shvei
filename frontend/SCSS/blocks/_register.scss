@@ -66,5 +66,8 @@
         color: $color-white;
         margin-bottom: 30px;
         display: inline-block;
+        &:hover {
+            color: $color-yellow;
+        }
     }
 }

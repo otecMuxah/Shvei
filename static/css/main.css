@@ -1587,6 +1587,8 @@ body {
     color: #fff;
     margin-bottom: 30px;
     display: inline-block; }
+    .register .forget:hover {
+      color: #e5bd62; }
 
 .terms-conditions {
   display: -webkit-box;
