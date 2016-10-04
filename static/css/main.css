@@ -527,7 +527,7 @@ body {
                 flex-direction: column; }
       .gallery__items > .colors .colors__items {
         margin: 0 0 5px 0; }
-    .gallery__items--selected #product-card {
+    .gallery__items--selected .product-card {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
