@@ -1100,6 +1100,10 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+    .product-card__close-icon {
+      top: 10px;
+      right: 33px;
+      color: #140c3b; }
     .product-card__close-icon--edit {
       top: 10px;
       right: 33px;
