@@ -52,11 +52,38 @@
         font: 20px $font_roman_bold;
     }
 }
-
+@include width-1400 {
+    .header-basket {
+        margin-bottom: 21px;
+    }
+}
 @include width-1200 {
     .header-basket {
+        //flex-direction: column;
+        //width: auto;
+        &__item {
+            //margin-bottom: 25px;
+        }
+    }
+}
+@include desktop {
+    .header-basket {
+        margin-bottom: 15px;
+        width: 27%;
+        &__link {
+            font-size: 0;
+            height: 20px;
+            display: block;
+        }
+    }
+}
+@include tablet {
+    .header-basket {
         flex-direction: column;
+        margin: 0;
         width: auto;
+        position: relative;
+        z-index: 10;
         &__item {
             margin-bottom: 25px;
         }

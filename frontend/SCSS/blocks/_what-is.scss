@@ -22,3 +22,14 @@
         margin-bottom: 20px;
     }
 }
+@include phone {
+    .what-is {
+        flex-direction: column;
+        &__image {
+            display: none;
+        }
+        &__wrapper {
+            width: 100%;
+        }
+    }
+}

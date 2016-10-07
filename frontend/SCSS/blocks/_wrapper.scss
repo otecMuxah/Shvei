@@ -33,3 +33,8 @@
         }
     }
 }
+@include tablet {
+    .wrapper {
+        margin: 0;
+    }
+}

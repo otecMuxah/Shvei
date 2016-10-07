@@ -142,3 +142,21 @@
         margin-right: 35px;
     }
 }
+@include desktop {
+    .dialog-admin {
+        margin-right: 5px;
+        &__content-wrapper {
+            flex-basis: 75%;
+        }
+    }
+}
+@include phone {
+    .dialog-admin {
+        &__content-wrapper {
+            flex-basis: 100%;
+        }
+        &__inner-aside {
+            flex-basis: 100%;
+        }
+    }
+}

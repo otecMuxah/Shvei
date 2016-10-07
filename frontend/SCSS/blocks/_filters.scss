@@ -6,10 +6,64 @@
     padding: 16px 20px;
     height: 100%;
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.09);
+    &__mobile-icon {
+        display: none;
+        cursor: pointer;
+        box-sizing: border-box;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,0) 10%,rgba(255,255,255,0) 45%,rgba(255,255,255,1) 45%,rgba(255,255,255,1) 55%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 90%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%);
+        svg {
+            display: none;
+        }
+    }
+    &__mobile-trigger {
+        cursor: pointer;
+        display: none;
+        width: 94%;
+        height: 55px;
+        opacity: 0;
+        position: absolute;
+        left: 7px;
+        margin: 0;
+        top: 26px;
+        transform: translate(0,-50%);
+    }
+    &__mobile-wrapper {
+        position: relative;
+    }
 }
 
 @include phone {
     .filters {
         width: 100%;
+        display: none;
+        &__mobile-icon {
+            display: flex;
+            margin-bottom: 20px;
+            background: $color-dark-blue;
+        }
+        &__mobile-trigger {
+            display: block;
+
+            &:checked ~ .filters {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+            &:checked + .filters__mobile-icon {
+                font-size: 0;
+                svg {
+                    display: block;
+                    fill: $color-white;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .main-part .filters__mobile-icon {
+        display: flex;
     }
 }

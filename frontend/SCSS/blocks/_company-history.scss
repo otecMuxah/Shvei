@@ -29,3 +29,11 @@
         font: 20px $font;
     }
 }
+
+@include phone {
+    .company-history {
+        &__image {
+            display: none;
+        }
+    }
+}

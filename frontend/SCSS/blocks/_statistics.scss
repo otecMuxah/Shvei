@@ -23,3 +23,8 @@
 
     }
 }
+@include tablet {
+    .statistics {
+        overflow-x: auto;
+    }
+}

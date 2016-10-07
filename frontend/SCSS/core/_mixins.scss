@@ -9,7 +9,7 @@
     }
 }
 @mixin desktop {
-    @media screen and (max-width: $res_960) {
+    @media screen and (max-width: $res_1000) {
         @content;
     }
 }

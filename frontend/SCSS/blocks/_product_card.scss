@@ -178,3 +178,26 @@
 
     }
 }
+@include tablet {
+    .product-card {
+        flex-direction: column;
+        height: auto;
+        overflow-y: auto;
+        .image-continer {
+            margin-bottom: 25px;
+        }
+        &__wrapper {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+        }
+        &__close-icon--edit {
+            top: 10px;
+            right: 33px;
+            color: $color-dark-blue;
+        }
+    }
+    .product-card .product-details {
+        width: 100%;
+    }
+}

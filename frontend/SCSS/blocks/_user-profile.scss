@@ -72,3 +72,11 @@
 
     }
 }
+
+@include tablet {
+    .user-profile {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+}
