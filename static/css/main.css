@@ -881,6 +881,10 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around; } }
 
+@media screen and (max-width: 770px) {
+  .gallery__items--selected .product-card {
+    display: block; } }
+
 @media screen and (max-width: 550px) {
   .gallery {
     width: 100%; }
@@ -1089,7 +1093,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: auto;
+    height: 100%;
     overflow-y: auto; }
     .product-card .image-continer {
       margin-bottom: 25px; }

@@ -171,6 +171,17 @@
         }
     }
 }
+@include tablet {
+    .gallery {
+        &__items {
+            &--selected {
+                .product-card {
+                    display: block;
+                }
+            }
+        }
+    }
+}
 
 @include phone {
     .gallery {
