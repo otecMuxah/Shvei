@@ -89,8 +89,10 @@
                 <li class="user-tab__item">
                     <a href="view-profile.html" class="user-tab__link">My profile</a>
                     <ul class="dropdown">
-                        <li class="dropdown__item"><a href="view-profile.html" class="dropdown__link">View profile</a></li>
-                        <li class="dropdown__item"><a href="edit-profile.html" class="dropdown__link">Edit profile</a></li>
+                        <li class="dropdown__item"><a href="view-profile.html" class="dropdown__link">View profile</a>
+                        </li>
+                        <li class="dropdown__item"><a href="edit-profile.html" class="dropdown__link">Edit profile</a>
+                        </li>
                         <li class="dropdown__item"><a href="" class="dropdown__link"></a></li>
                     </ul>
                 </li>
@@ -98,7 +100,9 @@
                 <li class="user-tab__item"><a href="dialog-admin.html" class="user-tab__link">Orders</a></li>
                 <li class="user-tab__item"><a href="my-products.html" class="user-tab__link">My products</a></li>
                 <li class="user-tab__item"><a href="publications.html" class="user-tab__link">Publications</a></li>
-                <li class="user-tab__item"><a href="order-statistic.html" class="user-tab__link">Orders statistic</a></li>                 <li class="user-tab__item"><a href="users.html" class="user-tab__link">All Users</a></li>
+                <li class="user-tab__item"><a href="order-statistic.html" class="user-tab__link">Orders statistic</a>
+                </li>
+                <li class="user-tab__item"><a href="users.html" class="user-tab__link">All Users</a></li>
             </ul>
         </div>
         <div class="wrapper">
@@ -110,96 +114,98 @@
                     </svg>
                 </span>
                 <aside class="filters">
-                    <div class="filter-by">
-                        <h2 class="filter-by__title">CATEGORIES</h2>
-                        <ul class="filter-by__list">
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">Women</a></li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">Men</a>
-                            </li>
-                            <li class="filter-by__item selected">
-                                <a href="#" class="filter-by__link">Kids</a>
-                                <span class="arrow"></span>
-                                <ul class="dropdown">
-                                    <li class="dropdown__item"><a href="#" class="dropdown__link">girl</a></li>
-                                    <li class="dropdown__item"><a href="#" class="dropdown__link">boy</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <label for="in-stock-check" class="checkbox">
-                            <span class="checkbox__text">IN-STOCK</span>
-                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
-                            <span class="checkbox__custom-checkbox"></span>
-                        </label>
-                        <label for="custom-check" class="checkbox">
-                            <span class="checkbox__text">CUSTOM</span>
-                            <input id="custom-check" type="checkbox" class="checkbox__input">
-                            <span class="checkbox__custom-checkbox"></span>
-                        </label>
-                    </div>
-                    <div class="filter-by">
-                        <h2 class="filter-by__title">FILTER BY PRICE</h2>
+                    <form action="post">
+                        <div class="filter-by">
+                            <h2 class="filter-by__title">CATEGORIES</h2>
+                            <ul class="filter-by__list">
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">Women</a></li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">Men</a>
+                                </li>
+                                <li class="filter-by__item selected">
+                                    <a href="#" class="filter-by__link">Kids</a>
+                                    <span class="arrow"></span>
+                                    <ul class="dropdown">
+                                        <li class="dropdown__item"><a href="#" class="dropdown__link">girl</a></li>
+                                        <li class="dropdown__item"><a href="#" class="dropdown__link">boy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <label for="in-stock-check" class="checkbox">
+                                <span class="checkbox__text">IN-STOCK</span>
+                                <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                <span class="checkbox__custom-checkbox"></span>
+                            </label>
+                            <label for="custom-check" class="checkbox">
+                                <span class="checkbox__text">CUSTOM</span>
+                                <input id="custom-check" type="checkbox" class="checkbox__input">
+                                <span class="checkbox__custom-checkbox"></span>
+                            </label>
+                        </div>
+                        <div class="filter-by">
+                            <h2 class="filter-by__title">FILTER BY PRICE</h2>
 
 
-                        <div id="slider-range" class="filter-by__slider"></div>
-                        <p>
-                            <label for="amount"></label>
-                            <input class="filter-by__range-text" type="text" id="amount" readonly
-                                   style="border:0; color:#f6931f; font-weight:bold;">
-                        </p>
-                    </div>
-                    <div class="filter-by">
-                        <h2 class="filter-by__title">BY SIZE</h2>
-                        <ul class="filter-by_list">
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">XS<span
-                                        class="filter-by__quantity">(1)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">S<span
-                                        class="filter-by__quantity">(2)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">M<span
-                                        class="filter-by__quantity">(3)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">L<span
-                                        class="filter-by__quantity">(4)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">XL<span
-                                        class="filter-by__quantity">(1)</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="filter-by">
-                        <h2 class="filter-by__title">by colors</h2>
-                        <ul class="filter-by__list">
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">Blue
-                                    <span class="filter-by__counter">(1)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">Black
-                                    <span class="filter-by__counter">(2)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item"><a href="#" class="filter-by__link">Gray<span
-                                    class="filter-by__counter">(3)</span></a></li>
-                            <li class="filter-by__item"><a href="#" class="filter-by__link">Purple<span
-                                    class="filter-by__counter">(4)</span></a></li>
-                            <li class="filter-by__item"><a href="#" class="filter-by__link">Red<span
-                                    class="filter-by__counter">(1)</span></a></li>
-                        </ul>
-                    </div>
+                            <div id="slider-range" class="filter-by__slider"></div>
+                            <p>
+                                <label for="amount"></label>
+                                <input class="filter-by__range-text" type="text" id="amount" readonly
+                                       style="border:0; color:#f6931f; font-weight:bold;">
+                            </p>
+                        </div>
+                        <div class="filter-by">
+                            <h2 class="filter-by__title">BY SIZE</h2>
+                            <ul class="filter-by_list">
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">XS<span
+                                            class="filter-by__quantity">(1)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">S<span
+                                            class="filter-by__quantity">(2)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">M<span
+                                            class="filter-by__quantity">(3)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">L<span
+                                            class="filter-by__quantity">(4)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">XL<span
+                                            class="filter-by__quantity">(1)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-by">
+                            <h2 class="filter-by__title">by colors</h2>
+                            <ul class="filter-by__list">
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">Blue
+                                        <span class="filter-by__counter">(1)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">Black
+                                        <span class="filter-by__counter">(2)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item"><a href="#" class="filter-by__link">Gray<span
+                                        class="filter-by__counter">(3)</span></a></li>
+                                <li class="filter-by__item"><a href="#" class="filter-by__link">Purple<span
+                                        class="filter-by__counter">(4)</span></a></li>
+                                <li class="filter-by__item"><a href="#" class="filter-by__link">Red<span
+                                        class="filter-by__counter">(1)</span></a></li>
+                            </ul>
+                        </div>
+                    </form>
                 </aside>
                 <div class="gallery">
                     <div class="gallery__sort">
@@ -222,22 +228,34 @@
                                 </svg>
                         </a>
                         <div class="product-card product-card--new-product add-product">
-                            <div class="product-card__wrapper">
+                            <form class="product-card__wrapper">
                                 <div class="product-card__close-icon">X</div>
                                 <div class="image-continer">
                                     <h2 class="product-card__title">Add Image</h2>
-                                    <svg class="add-product__add-image add-product__add-image--big">
-                                        <use xlink:href="#plus-icon"></use>
-                                    </svg>
-                                    <svg class="add-product__add-image add-product__add-image--small">
-                                        <use xlink:href="#plus-icon"></use>
-                                    </svg>
-                                    <svg class="add-product__add-image add-product__add-image--small">
-                                        <use xlink:href="#plus-icon"></use>
-                                    </svg>
-                                    <svg class="add-product__add-image add-product__add-image--small">
-                                        <use xlink:href="#plus-icon"></use>
-                                    </svg>
+                                    <div class="add-product__add-image--wrapper">
+                                        <input type="file">
+                                        <svg class="add-product__add-image add-product__add-image--big">
+                                            <use xlink:href="#plus-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="add-product__add-image--wrapper">
+                                        <input type="file">
+                                        <svg class="add-product__add-image add-product__add-image--small">
+                                            <use xlink:href="#plus-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="add-product__add-image--wrapper">
+                                        <input type="file">
+                                        <svg class="add-product__add-image add-product__add-image--small">
+                                            <use xlink:href="#plus-icon"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="add-product__add-image--wrapper">
+                                        <input type="file">
+                                        <svg class="add-product__add-image add-product__add-image--small">
+                                            <use xlink:href="#plus-icon"></use>
+                                        </svg>
+                                    </div>
                                 </div>
                                 <div class="product-details">
                                     <div class="add-product__wrapper">
@@ -304,54 +322,54 @@
                                             </li>
                                             <li class="add-product__item">
                                                 <span>Sizes :</span>
-                                                <ul class="add-product__colors">
+                                                <ul class="add-product__colors radio-list">
                                                     <li>
-                                                        <label for="size-xs" class="checkbox">
+                                                        <input id="size-xs" type="radio" value="xs" name="radio"
+                                                               class="radio-list__radio">
+                                                        <label for="size-xs" class="radio-list__label">
                                                             <span class="checkbox__text">XS</span>
-                                                            <input id="size-xs" type="checkbox"
-                                                                   class="checkbox__input">
-                                                            <span class="checkbox__custom-checkbox"></span>
                                                         </label>
+
                                                     </li>
                                                     <li>
-                                                        <label for="size-s" class="checkbox">
+                                                        <input id="size-s" type="radio" value="s" name="radio"
+                                                               class="radio-list__radio">
+                                                        <label for="size-s" class="radio-list__label">
                                                             <span class="checkbox__text">S</span>
-                                                            <input id="size-s" type="checkbox"
-                                                                   class="checkbox__input">
-                                                            <span class="checkbox__custom-checkbox"></span>
                                                         </label>
+
                                                     </li>
                                                     <li>
-                                                        <label for="size-m" class="checkbox">
+                                                        <input id="size-m" type="radio" value="M" name="radio"
+                                                               class="radio-list__radio">
+                                                        <label for="size-m" class="radio-list__label">
                                                             <span class="checkbox__text">M</span>
-                                                            <input id="size-m" type="checkbox"
-                                                                   class="checkbox__input">
-                                                            <span class="checkbox__custom-checkbox"></span>
                                                         </label>
+
                                                     </li>
                                                     <li>
-                                                        <label for="size-l" class="checkbox">
+                                                        <input id="size-l" type="radio" value="L" name="radio"
+                                                               class="radio-list__radio">
+                                                        <label for="size-l" class="radio-list__label">
                                                             <span class="checkbox__text">L</span>
-                                                            <input id="size-l" type="checkbox"
-                                                                   class="checkbox__input">
-                                                            <span class="checkbox__custom-checkbox"></span>
                                                         </label>
+
                                                     </li>
                                                     <li>
-                                                        <label for="size-xl" class="checkbox">
+                                                        <input id="size-xl" type="radio" value="xl" name="radio"
+                                                               class="radio-list__radio">
+                                                        <label for="size-xl" class="radio-list__label">
                                                             <span class="checkbox__text">XL</span>
-                                                            <input id="size-xl" type="checkbox"
-                                                                   class="checkbox__input">
-                                                            <span class="checkbox__custom-checkbox"></span>
                                                         </label>
+
                                                     </li>
                                                     <li>
-                                                        <label for="size-xxl" class="checkbox">
+                                                        <input id="size-xxl" type="radio" value="xxl" name="radio"
+                                                               class="radio-list__radio">
+                                                        <label for="size-xxl" class="radio-list__label">
                                                             <span class="checkbox__text">XXL</span>
-                                                            <input id="size-xxl" type="checkbox"
-                                                                   class="checkbox__input">
-                                                            <span class="checkbox__custom-checkbox"></span>
                                                         </label>
+
                                                     </li>
                                                 </ul>
                                             </li>
@@ -366,7 +384,7 @@
                                     </div>
                                     <span class="button button--float-right">Publish</span>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                     <ul class="gallery__list">
@@ -380,7 +398,7 @@
                                 <span class="more-info"></span>
                             </div>
                             <!--Start of Product Info Block-->
-                            <div class="product-card" id="product-card">
+                            <div class="product-card product-card--view" id="product-card">
                                 <div class="product-card__wrapper">
                                     <div class="product-card__close-icon">X</div>
                                     <div class="image-continer">
@@ -389,7 +407,7 @@
                                         <img src="images/item-card1.png" alt="" class="small-img">
                                         <img src="images/item-card1.png" alt="" class="small-img">
                                     </div>
-                                    <div class="product-details">
+                                    <form class="product-details">
                                         <h1 class="product-card__title">Shirt with stripes</h1>
                                         <span class="price">75$</span>
                                         <span class="type">Shirt</span>
@@ -425,7 +443,7 @@
                                             <span class="more">></span>
                                         </div>
                                         <!--<span class="button button&#45;&#45;float-right">Edit Info</span>-->
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
 
@@ -436,11 +454,14 @@
                                         <img src="images/item-card1.png" alt="" class="big-image">
                                         <img src="images/item-card1.png" alt="" class="small-img">
                                         <img src="images/item-card1.png" alt="" class="small-img">
-                                        <svg class="add-product__add-image add-product__add-image--small">
-                                            <use xlink:href="#plus-icon"></use>
-                                        </svg>
+                                        <div class="add-product__add-image--wrapper">
+                                            <input type="text">
+                                            <svg class="add-product__add-image add-product__add-image--small">
+                                                <use xlink:href="#plus-icon"></use>
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <div class="product-details">
+                                    <form class="product-details">
                                         <div class="product-details__small-wrapper">
                                             <span>Title :</span><input type="text" value="SHIRT WITH STRIPES">
                                         </div>
@@ -468,7 +489,7 @@
                                             <option value="2">Custom Tailoring</option>
                                         </select>
                                         <span class="button button--float-right">Save</span>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </li>

@@ -25,7 +25,8 @@
 .facebook,
 .twitter,
 .google,
-.user-tab__shortcut:after {
+.user-tab__shortcut:after,
+.radio-list__label:before {
   background: url("../images/sprite.png") no-repeat; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -396,9 +397,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 33.6%;
   margin-right: 25px; }
   .header-basket__link {
@@ -407,18 +408,20 @@ body {
     padding: 9px 5px 9px 50px; }
     .header-basket__link:hover {
       color: #e5bd62; }
-  .header-basket__item:last-child .header-basket__link {
-    background-position: 0 -45px; }
-    .header-basket__item:last-child .header-basket__link:hover {
-      background-position: 0 -197px; }
-  .header-basket__item:nth-child(2) .header-basket__link {
-    background-position: 0 0; }
-    .header-basket__item:nth-child(2) .header-basket__link:hover {
-      background-position: 0 -150px; }
-  .header-basket__item:first-child .header-basket__link {
-    background-position: 0 -103px; }
-    .header-basket__item:first-child .header-basket__link:hover {
-      background-position: 0 -256px; }
+  .header-basket__item {
+    margin-left: 20px; }
+    .header-basket__item:last-child .header-basket__link {
+      background-position: 0 -45px; }
+      .header-basket__item:last-child .header-basket__link:hover {
+        background-position: 0 -197px; }
+    .header-basket__item:nth-child(2) .header-basket__link {
+      background-position: 0 0; }
+      .header-basket__item:nth-child(2) .header-basket__link:hover {
+        background-position: 0 -150px; }
+    .header-basket__item:first-child .header-basket__link {
+      background-position: 0 -103px; }
+      .header-basket__item:first-child .header-basket__link:hover {
+        background-position: 0 -256px; }
 
 .basket {
   position: relative; }
@@ -769,7 +772,7 @@ body {
                 flex-direction: column; }
       .gallery__items > .colors .colors__items {
         margin: 0 0 5px 0; }
-    .gallery__items--selected .product-card {
+    .gallery__items--selected .product-card--view {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
@@ -1143,14 +1146,6 @@ body {
       border: 1px solid #e5bd62; }
   .colors__items {
     margin-right: 15px; }
-    .colors__items:nth-child(1) .colors__links {
-      background: #cdcdcd; }
-    .colors__items:nth-child(2) .colors__links {
-      background: #6c000a; }
-    .colors__items:nth-child(3) .colors__links {
-      background: #004e49; }
-    .colors__items:nth-child(4) .colors__links {
-      background: #fff; }
     .colors__items .active {
       border: 1px solid #e5bd62; }
 
@@ -1690,6 +1685,7 @@ body {
     .user-tab__item:hover .dropdown {
       display: block; }
   .user-tab--selected {
+    position: fixed;
     cursor: auto;
     padding: 20px;
     -webkit-transform: translate(0, 0);
@@ -2014,6 +2010,16 @@ body {
       fill: #e5bd62;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease; }
+  .add-product__add-image--wrapper {
+    position: relative; }
+    .add-product__add-image--wrapper input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer; }
 
 .add-product .product-card__wrapper {
   height: auto; }
@@ -2064,3 +2070,24 @@ body {
   .users .gallery__modal {
     width: 100%;
     height: 100%; }
+
+.radio-list__radio {
+  display: none; }
+
+.radio-list__label {
+  padding: 1px 0 3px 26px;
+  position: relative;
+  display: block;
+  font: 14px/18px Candara, Arial, sans-serif; }
+  .radio-list__label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-position: 0 -304px;
+    float: right; }
+  .radio-list__radio:checked ~ .radio-list__label:before {
+    background-position: 0 -353px; }

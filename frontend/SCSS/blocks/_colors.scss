@@ -25,18 +25,18 @@
     }
     &__items {
         margin-right: 15px;
-        &:nth-child(1) .colors__links {
-            background: #cdcdcd;
-        }
-        &:nth-child(2) .colors__links{
-            background: #6c000a;
-        }
-        &:nth-child(3) .colors__links{
-            background: #004e49;
-        }
-        &:nth-child(4) .colors__links{
-            background: #fff;
-        }
+        //&:nth-child(1) .colors__links {
+        //    background: #cdcdcd;
+        //}
+        //&:nth-child(2) .colors__links{
+        //    background: #6c000a;
+        //}
+        //&:nth-child(3) .colors__links{
+        //    background: #004e49;
+        //}
+        //&:nth-child(4) .colors__links{
+        //    background: #fff;
+        //}
         .active {
             border: 1px solid $color-yellow;
         }

@@ -1,0 +1,28 @@
+.radio-list {
+    &__radio {
+        display: none;
+    }
+    &__label {
+        padding: 1px 0 3px 26px;
+
+        position: relative;
+        display: block;
+        font: 14px/18px $font;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1px;
+            display: block;
+            width: 28px;
+            height: 28px;
+            background-position: 0 -304px;
+            float: right;
+        }
+
+        .radio-list__radio:checked ~ &:before {
+            background-position: 0 -353px;
+        }
+    }
+}

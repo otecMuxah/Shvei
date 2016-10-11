@@ -102,96 +102,98 @@
                 </span>
                 <!--</div>-->
                 <aside class="filters">
-                    <div class="filter-by">
-                        <h2 class="filter-by__title">CATEGORIES</h2>
-                        <ul class="filter-by__list">
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">Women</a></li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">Men</a>
-                            </li>
-                            <li class="filter-by__item selected">
-                                <a href="#" class="filter-by__link">Kids</a>
-                                <span class="arrow"></span>
-                                <ul class="dropdown">
-                                    <li class="dropdown__item"><a href="#" class="dropdown__link">girl</a></li>
-                                    <li class="dropdown__item"><a href="#" class="dropdown__link">boy</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <label for="in-stock-check" class="checkbox">
-                            <span class="checkbox__text">IN-STOCK</span>
-                            <input id="in-stock-check" type="checkbox" class="checkbox__input">
-                            <span class="checkbox__custom-checkbox"></span>
-                        </label>
-                        <label for="custom-check" class="checkbox">
-                            <span class="checkbox__text">CUSTOM</span>
-                            <input id="custom-check" type="checkbox" class="checkbox__input">
-                            <span class="checkbox__custom-checkbox"></span>
-                        </label>
-                    </div>
-                    <div class="filter-by">
-                        <h2 class="filter-by__title">FILTER BY PRICE</h2>
+                    <form action="post">
+                        <div class="filter-by">
+                            <h2 class="filter-by__title">CATEGORIES</h2>
+                            <ul class="filter-by__list">
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">Women</a></li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">Men</a>
+                                </li>
+                                <li class="filter-by__item selected">
+                                    <a href="#" class="filter-by__link">Kids</a>
+                                    <span class="arrow"></span>
+                                    <ul class="dropdown">
+                                        <li class="dropdown__item"><a href="#" class="dropdown__link">girl</a></li>
+                                        <li class="dropdown__item"><a href="#" class="dropdown__link">boy</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <label for="in-stock-check" class="checkbox">
+                                <span class="checkbox__text">IN-STOCK</span>
+                                <input id="in-stock-check" type="checkbox" class="checkbox__input">
+                                <span class="checkbox__custom-checkbox"></span>
+                            </label>
+                            <label for="custom-check" class="checkbox">
+                                <span class="checkbox__text">CUSTOM</span>
+                                <input id="custom-check" type="checkbox" class="checkbox__input">
+                                <span class="checkbox__custom-checkbox"></span>
+                            </label>
+                        </div>
+                        <div class="filter-by">
+                            <h2 class="filter-by__title">FILTER BY PRICE</h2>
 
 
-                        <div id="slider-range" class="filter-by__slider"></div>
-                        <p>
-                            <label for="amount"></label>
-                            <input class="filter-by__range-text" type="text" id="amount" readonly
-                                   style="border:0; color:#f6931f; font-weight:bold;">
-                        </p>
-                    </div>
-                    <div class="filter-by">
-                        <h2 class="filter-by__title">BY SIZE</h2>
-                        <ul class="filter-by_list">
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">XS<span
-                                        class="filter-by__quantity">(1)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">S<span
-                                        class="filter-by__quantity">(2)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">M<span
-                                        class="filter-by__quantity">(3)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">L<span
-                                        class="filter-by__quantity">(4)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">XL<span
-                                        class="filter-by__quantity">(1)</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="filter-by">
-                        <h2 class="filter-by__title">by colors</h2>
-                        <ul class="filter-by__list">
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">Blue
-                                    <span class="filter-by__counter">(1)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item">
-                                <a href="#" class="filter-by__link">Black
-                                    <span class="filter-by__counter">(2)</span>
-                                </a>
-                            </li>
-                            <li class="filter-by__item"><a href="#" class="filter-by__link">Gray<span
-                                    class="filter-by__counter">(3)</span></a></li>
-                            <li class="filter-by__item"><a href="#" class="filter-by__link">Purple<span
-                                    class="filter-by__counter">(4)</span></a></li>
-                            <li class="filter-by__item"><a href="#" class="filter-by__link">Red<span
-                                    class="filter-by__counter">(1)</span></a></li>
-                        </ul>
-                    </div>
+                            <div id="slider-range" class="filter-by__slider"></div>
+                            <p>
+                                <label for="amount"></label>
+                                <input class="filter-by__range-text" type="text" id="amount" readonly
+                                       style="border:0; color:#f6931f; font-weight:bold;">
+                            </p>
+                        </div>
+                        <div class="filter-by">
+                            <h2 class="filter-by__title">BY SIZE</h2>
+                            <ul class="filter-by_list">
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">XS<span
+                                            class="filter-by__quantity">(1)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">S<span
+                                            class="filter-by__quantity">(2)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">M<span
+                                            class="filter-by__quantity">(3)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">L<span
+                                            class="filter-by__quantity">(4)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">XL<span
+                                            class="filter-by__quantity">(1)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-by">
+                            <h2 class="filter-by__title">by colors</h2>
+                            <ul class="filter-by__list">
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">Blue
+                                        <span class="filter-by__counter">(1)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item">
+                                    <a href="#" class="filter-by__link">Black
+                                        <span class="filter-by__counter">(2)</span>
+                                    </a>
+                                </li>
+                                <li class="filter-by__item"><a href="#" class="filter-by__link">Gray<span
+                                        class="filter-by__counter">(3)</span></a></li>
+                                <li class="filter-by__item"><a href="#" class="filter-by__link">Purple<span
+                                        class="filter-by__counter">(4)</span></a></li>
+                                <li class="filter-by__item"><a href="#" class="filter-by__link">Red<span
+                                        class="filter-by__counter">(1)</span></a></li>
+                            </ul>
+                        </div>
+                    </form>
                 </aside>
                 <div class="gallery">
                     <div class="gallery__sort">
@@ -207,7 +209,7 @@
                                 <span class="to-basket"></span>
                                 <span class="more-info"></span>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card product-card--view">
                                 <div class="product-card__wrapper">
                                     <div class="product-card__close-icon">X</div>
                                     <div class="image-continer">
@@ -217,6 +219,7 @@
                                         <img src="images/item-card1.png" alt="" class="small-img">
                                     </div>
                                     <div class="product-details">
+                                        <form action="post">
                                         <h1 class="product-card__title">Shirt with stripes</h1>
                                         <span class="price">75$</span>
                                         <span class="type">Shirt</span>
@@ -227,10 +230,17 @@
                                         <div class="colors">
                                             <h2 class="colors__title">COLOR</h2>
                                             <ul class="colors__list">
-                                                <li class="colors__items"><span class="colors__links"></span></li>
-                                                <li class="colors__items"><span class="colors__links"></span></li>
-                                                <li class="colors__items"><span class="colors__links"></span></li>
-                                                <li class="colors__items"><span class="colors__links"></span></li>
+                                                <li class="colors__items"><span class="colors__links"
+                                                                                style="background:  #cdcdcd"></span>
+                                                </li>
+                                                <li class="colors__items"><span class="colors__links"
+                                                                                style="background:  #6c000a"></span>
+                                                </li>
+                                                <li class="colors__items"><span class="colors__links"
+                                                                                style="background:  #004e49"></span>
+                                                </li>
+                                                <li class="colors__items"><span class="colors__links"
+                                                                                style="background:  #fff"></span></li>
                                             </ul>
                                         </div>
 
@@ -252,6 +262,7 @@
                                             <span class="more">></span>
                                         </div>
                                         <span class="button button--float-right">Add to cart</span>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -275,10 +286,14 @@
                             <span class="availability">in stock</span>
                             <div class="colors">
                                 <ul class="colors__list">
-                                    <li class="colors__items"><span class="colors__links"></span></li>
-                                    <li class="colors__items"><span class="colors__links"></span></li>
-                                    <li class="colors__items"><span class="colors__links"></span></li>
-                                    <li class="colors__items"><span class="colors__links"></span></li>
+                                    <li class="colors__items"><span class="colors__links"
+                                                                    style="background:  #cdcdcd"></span></li>
+                                    <li class="colors__items"><span class="colors__links"
+                                                                    style="background:  #6c000a"></span></li>
+                                    <li class="colors__items"><span class="colors__links"
+                                                                    style="background:  #004e49"></span></li>
+                                    <li class="colors__items"><span class="colors__links"
+                                                                    style="background:  #fff"></span></li>
                                 </ul>
                             </div>
                             <div class="gallery__modal">

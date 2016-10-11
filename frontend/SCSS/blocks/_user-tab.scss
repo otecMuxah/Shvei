@@ -23,6 +23,7 @@
         }
     }
     &--selected {
+        position: fixed;
         cursor: auto;
         padding: 20px;
         transform: translate(0,0);
