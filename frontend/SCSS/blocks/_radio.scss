@@ -4,11 +4,15 @@
     }
     &__label {
         padding: 1px 0 3px 26px;
-
+        font-size: 18px;
         position: relative;
         display: block;
         font: 14px/18px $font;
-
+        height: 25px;
+        .checkbox__text {
+            margin-left: 10px;
+            font-size: 18px;
+        }
         &:before {
             content: '';
             position: absolute;
