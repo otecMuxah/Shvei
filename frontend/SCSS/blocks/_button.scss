@@ -19,6 +19,9 @@
             display: none;
         }
     }
+    &--magrin-bott {
+        margin-bottom: 15px;
+    }
     &--red {
         background: darken(#FF1300,30%);
         transition: all 150ms linear;
@@ -59,6 +62,7 @@
             transform: translateZ(0);
         }
     }
+
 
 }
 .buttons-holder {

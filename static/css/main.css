@@ -114,6 +114,8 @@ body {
     float: right; }
   .button__holder input {
     display: none; }
+  .button--magrin-bott {
+    margin-bottom: 15px; }
   .button--red {
     background: #660800;
     -webkit-transition: all 150ms linear;
@@ -246,7 +248,6 @@ body {
     position: relative;
     -webkit-box-align: end;
         -ms-flex-align: end;
-                -ms-grid-row-align: flex-end;
             align-items: flex-end; }
     .header__logo {
       margin: 0;
@@ -356,6 +357,7 @@ body {
     width: 320px; }
     .header-nav__wrapper {
       -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
           align-self: center;
       margin: 0;
       padding-left: 20px; }
@@ -491,7 +493,6 @@ body {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center;
     background: -webkit-linear-gradient(top, white 0%, white 10%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 45%, white 45%, white 55%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 90%, white 90%, white 100%);
     background: linear-gradient(to bottom, white 0%, white 10%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 45%, white 45%, white 55%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 90%, white 90%, white 100%); }
@@ -824,7 +825,6 @@ body {
     background: rgba(255, 255, 255, 0.7);
     -webkit-box-align: center;
         -ms-flex-align: center;
-                -ms-grid-row-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -925,7 +925,6 @@ body {
   background: rgba(20, 12, 59, 0.5);
   -webkit-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1397,7 +1396,6 @@ body {
   .contact-us__contacts {
     -webkit-box-align: end;
         -ms-flex-align: end;
-                -ms-grid-row-align: flex-end;
             align-items: flex-end;
     padding-right: 80px;
     text-align: right; }
@@ -1604,7 +1602,8 @@ body {
     display: flex; }
   .product-in-chat__text--price {
     font-size: 36px;
-    color: #e5bd62; }
+    color: #e5bd62;
+    margin-bottom: 15px; }
   .product-in-chat__text span {
     color: #e5bd62;
     margin-right: 5px; }
