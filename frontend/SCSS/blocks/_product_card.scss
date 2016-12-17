@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     z-index: 100;
+
     input {
         height: 30px;
         border: 1px solid $color-dark-blue;
@@ -40,14 +41,24 @@
         }
     }
     &__wrapper {
-        width: 710px;
-        height: 555px;
+        width: 100%;
+        max-width: 710px;
+        max-height: 555px;
         background: $color-white;
         display: flex;
         justify-content: space-between;
         padding: 27px;
         box-sizing: border-box;
         position: relative;
+        &--scroll {
+            overflow-y: auto;
+        }
+        &--main {
+            width: 100%;
+            max-width: 710px;
+            height: 555px;
+            position: relative;
+        }
     }
     .image-continer {
         display: flex;
@@ -176,6 +187,9 @@
     }
     &--edit-product {
 
+    }
+    &--mod {
+        justify-content: center;
     }
 }
 @include tablet {

@@ -9,7 +9,23 @@ $(document).ready(function(){
     $(".product-card__close-icon").on('click', function () {
         $(this).closest('.user-tab').removeClass('.user-tab--selected');
     });
+    $("#quantity-minus").on('click', function () {
+        var value = parseInt($("#quantity-value").val());
 
+        console.log(value);
+        if (value > 1) {
+            value -= 1;
+            $("#quantity-value").val(value);
+        }
+    });
+    $("#quantity-plus").on('click', function () {
+        var value = parseInt($("#quantity-value").val());
+        console.log(value);
+
+            value += 1;
+            $("#quantity-value").val(value);
+
+    });
     $(function () {
         var links = '.tabset li a', // set selector to the tab's links, i.e '.nav a'
             tabs = '.tab', // set selector to the tab's blocks, i.e '.tab'
@@ -21,19 +37,22 @@ $(document).ready(function(){
             $(tabs).hide().filter(id).show();
             e.preventDefault();
         });
+        if ($("#slider-range").length > 0) {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [75, 300],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        }
 
-        $("#slider-range").slider({
-            range: true,
-            min: 0,
-            max: 500,
-            values: [75, 300],
-            slide: function (event, ui) {
-                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-            }
-        });
 
-        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-            " - $" + $("#slider-range").slider("values", 1));
+
 
         $(".arrow").on('click', function () {
             $(this).closest('li').toggleClass('selected');

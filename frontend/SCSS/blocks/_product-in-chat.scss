@@ -47,6 +47,7 @@
     &__status {
         display: flex;
         justify-content: space-around;
+        align-items: flex-end;
     }
     &__description {
         margin-bottom: 20px;

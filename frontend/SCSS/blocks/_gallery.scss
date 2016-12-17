@@ -45,6 +45,10 @@
             border-radius: 50%;
 
         }
+        &--mod {
+            margin-bottom: 0;
+            box-shadow: none;
+        }
         & > .colors {
             position: absolute;
             top: 143px;
@@ -63,7 +67,7 @@
         }
         &--active {
             .product-card--edit-product {
-                display: flex;
+                display: flex ;
             }
         }
         &:hover .gallery__modal {

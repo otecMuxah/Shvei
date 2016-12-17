@@ -228,30 +228,31 @@
                                 </svg>
                         </a>
                         <div class="product-card product-card--new-product add-product">
-                            <form class="product-card__wrapper">
+                            <div class="product-card__wrapper--main">
                                 <div class="product-card__close-icon">X</div>
+                                <form action="post" class="product-card__wrapper product-card__wrapper--scroll">
                                 <div class="image-continer">
                                     <h2 class="product-card__title">Add Image</h2>
                                     <div class="add-product__add-image--wrapper">
-                                        <input type="file">
+                                        <input type="file" accept="image/*">
                                         <svg class="add-product__add-image add-product__add-image--big">
                                             <use xlink:href="#plus-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="add-product__add-image--wrapper">
-                                        <input type="file">
+                                        <input type="file" accept="image/*">
                                         <svg class="add-product__add-image add-product__add-image--small">
                                             <use xlink:href="#plus-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="add-product__add-image--wrapper">
-                                        <input type="file">
+                                        <input type="file" accept="image/*">
                                         <svg class="add-product__add-image add-product__add-image--small">
                                             <use xlink:href="#plus-icon"></use>
                                         </svg>
                                     </div>
                                     <div class="add-product__add-image--wrapper">
-                                        <input type="file">
+                                        <input type="file" accept="image/*">
                                         <svg class="add-product__add-image add-product__add-image--small">
                                             <use xlink:href="#plus-icon"></use>
                                         </svg>
@@ -384,7 +385,8 @@
                                     </div>
                                     <span class="button button--float-right">Publish</span>
                                 </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <ul class="gallery__list">
@@ -451,11 +453,21 @@
                                 <form class="product-card__wrapper">
                                     <div class="product-card__close-icon--edit">X</div>
                                     <div class="image-continer">
-                                        <img src="images/item-card1.png" alt="" class="big-image">
-                                        <img src="images/item-card1.png" alt="" class="small-img">
-                                        <img src="images/item-card1.png" alt="" class="small-img">
                                         <div class="add-product__add-image--wrapper">
-                                            <input type="text">
+                                            <input type="file" accept="image/*">
+                                            <img src="images/item-card1.png" alt="" class="big-image">
+                                        </div>
+                                        <div class="add-product__add-image--wrapper">
+                                            <input type="file" accept="image/*">
+                                            <img src="images/item-card1.png" alt="" class="small-img">
+                                        </div>
+                                        <div class="add-product__add-image--wrapper">
+                                            <input type="file" accept="image/*">
+                                            <img src="images/item-card1.png" alt="" class="small-img">
+                                        </div>
+
+                                        <div class="add-product__add-image--wrapper">
+                                            <input type="file" accept="image/*">
                                             <svg class="add-product__add-image add-product__add-image--small">
                                                 <use xlink:href="#plus-icon"></use>
                                             </svg>

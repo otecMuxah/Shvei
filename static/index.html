@@ -230,8 +230,8 @@
                                         <div class="colors">
                                             <h2 class="colors__title">COLOR</h2>
                                             <ul class="colors__list">
-                                                <li class="colors__items"><span class="colors__links"
-                                                                                style="background:  #cdcdcd"></span>
+                                                <li class="colors__items">
+                                                    <span class="colors__links" tyle="background:  #cdcdcd"></span>
                                                 </li>
                                                 <li class="colors__items"><span class="colors__links"
                                                                                 style="background:  #6c000a"></span>
@@ -248,18 +248,48 @@
                                         <div class="size">
                                             <h2 class="size__title">SIZE</h2>
                                             <ul class="size__list">
-                                                <li class="size__item"><span class="size__link">XS</span></li>
-                                                <li class="size__item"><span class="size__link">S</span></li>
-                                                <li class="size__item"><span class="size__link">M</span></li>
-                                                <li class="size__item"><span class="size__link">L</span></li>
-                                                <li class="size__item"><span class="size__link">XL</span></li>
+                                                <li class="size__item">
+                                                    <input id="size-xs" type="radio" value="xs" name="radio"
+                                                           class="radio-list__radio">
+                                                    <label for="size-xs" class="radio-list__label">
+                                                        <span class="checkbox__text">XS</span>
+                                                    </label>
+                                                </li>
+                                                <li class="size__item">
+                                                    <input id="size-s" type="radio" value="xs" name="radio"
+                                                           class="radio-list__radio">
+                                                    <label for="size-s" class="radio-list__label">
+                                                        <span class="checkbox__text">S</span>
+                                                    </label>
+                                                </li>
+                                                <li class="size__item">
+                                                    <input id="size-m" type="radio" value="xs" name="radio"
+                                                           class="radio-list__radio">
+                                                    <label for="size-m" class="radio-list__label">
+                                                        <span class="checkbox__text">M</span>
+                                                    </label>
+                                                </li>
+                                                <li class="size__item">
+                                                    <input id="size-l" type="radio" value="xs" name="radio"
+                                                                              class="radio-list__radio">
+                                                    <label for="size-l" class="radio-list__label">
+                                                        <span class="checkbox__text">L</span>
+                                                    </label>
+                                                </li>
+                                                <li class="size__item">
+                                                    <input id="size-xl" type="radio" value="xs" name="radio"
+                                                           class="radio-list__radio">
+                                                    <label for="size-xl" class="radio-list__label">
+                                                        <span class="checkbox__text">XL</span>
+                                                    </label>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="quantity">
                                             <h2 class="quantity__title">Quantity</h2>
-                                            <span class="less"><</span>
-                                            <input type="text" value="1">
-                                            <span class="more">></span>
+                                            <span class="less" id="quantity-minus"><</span>
+                                            <input id="quantity-value" type="text" value="1">
+                                            <span class="more" id="quantity-plus">></span>
                                         </div>
                                         <span class="button button--float-right">Add to cart</span>
                                         </form>
