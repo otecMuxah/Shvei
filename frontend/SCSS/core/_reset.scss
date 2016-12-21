@@ -62,3 +62,7 @@ input:active {
 button {
     border: 0;
 }
+
+select:focus {
+    outline: 0;
+}
