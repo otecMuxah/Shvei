@@ -1,13 +1,30 @@
 /**
  * Created by suxx_ on 29.09.2016.
  */
-$(document).ready(function(){
+$(document).ready(function () {
     $(".user-tab").on('click', function () {
         $(this).closest('.user-tab').toggleClass('user-tab--selected');
     });
 
     $(".product-card__close-icon").on('click', function () {
         $(this).closest('.user-tab').removeClass('.user-tab--selected');
+    });
+    $("#quantity-minus").on('click', function () {
+        var value = parseInt($("#quantity-value").val());
+
+        console.log(value);
+        if (value > 1) {
+            value -= 1;
+            $("#quantity-value").val(value);
+        }
+    });
+    $("#quantity-plus").on('click', function () {
+        var value = parseInt($("#quantity-value").val());
+        console.log(value);
+
+        value += 1;
+        $("#quantity-value").val(value);
+
     });
 
     $(function () {

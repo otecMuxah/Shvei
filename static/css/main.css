@@ -2139,3 +2139,16 @@ body {
     float: right; }
   .radio-list__radio:checked ~ .radio-list__label:before {
     background-position: 0 -353px; }
+
+.table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 550px; }
+  .table__cell {
+    vertical-align: middle; }
+    .table__cell .checkbox {
+      margin-bottom: 0; }
+  .table__row {
+    border-bottom: 1px solid #140c3b; }
+    .table__row:last-child {
+      border-bottom: 0; }

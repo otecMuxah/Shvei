@@ -1,0 +1,18 @@
+.table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 550px;
+  &__cell {
+    vertical-align: middle;
+    .checkbox {
+      margin-bottom: 0;
+    }
+
+  }
+  &__row {
+    border-bottom: 1px solid $color-dark-blue ;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
