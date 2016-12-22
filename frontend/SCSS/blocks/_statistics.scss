@@ -15,10 +15,20 @@
         }
         td {
             padding: 15px 5px;
+            position: relative;
         }
         th {
             background: $color-dark-blue;
             color: $color-white;
+        }
+        .bg-check:after {
+            content: "";
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-position: 0 -353px;;
         }
 
     }

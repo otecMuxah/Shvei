@@ -57,7 +57,8 @@ $font_roman_bold: BodoniFLF-Bold, Arial, sans-serif;
 .twitter,
 .google,
 .user-tab__shortcut:after,
-.radio-list__label:before {
+.radio-list__label:before,
+.bg-check:after {
   background: url("../images/sprite.png") no-repeat;
 }
 

@@ -26,7 +26,8 @@
 .twitter,
 .google,
 .user-tab__shortcut:after,
-.radio-list__label:before {
+.radio-list__label:before,
+.bg-check:after {
   background: url("../images/sprite.png") no-repeat; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -2095,10 +2096,20 @@ body {
       padding: 15px 5px;
       text-align: center; }
     .statistics__table td {
-      padding: 15px 5px; }
+      padding: 15px 5px;
+      position: relative; }
     .statistics__table th {
       background: #140c3b;
       color: #fff; }
+    .statistics__table .bg-check:after {
+      content: "";
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      background-position: 0 -353px; }
 
 @media screen and (max-width: 770px) {
   .statistics {
