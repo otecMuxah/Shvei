@@ -9,24 +9,24 @@ $(document).ready(function () {
     $(".product-card__close-icon").on('click', function () {
         $(this).closest('.user-tab').removeClass('.user-tab--selected');
     });
-    $("#quantity-minus").on('click', function () {
-        var value = parseInt($("#quantity-value").val());
+    $(".quantity-minus").on('click', function () {
+        var value = parseInt($(this).next(".quantity-value").val());
 
         console.log(value);
         if (value > 1) {
             value -= 1;
-            $("#quantity-value").val(value);
+            $(this).next(".quantity-value").val(value);
         }
     });
-    $("#quantity-plus").on('click', function () {
-        var value = parseInt($("#quantity-value").val());
+    $(".quantity-plus").on('click', function () {
+        var value = parseInt($(this).prev(".quantity-value").val());
+        console.log($(this));
         console.log(value);
 
         value += 1;
-        $("#quantity-value").val(value);
+        $(this).prev(".quantity-value").val(value);
 
     });
-
     $(function () {
         var links = '.tabset li a', // set selector to the tab's links, i.e '.nav a'
             tabs = '.tab', // set selector to the tab's blocks, i.e '.tab'
