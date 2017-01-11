@@ -7,11 +7,26 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="scripts/main.js"></script>
 
 </head>
 
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="plus-icon" viewBox="0 0 27.333 27.167">
+        <g>
+            <g>
+                <path d="M14.765,5.937v6.829h6.567v1.745h-6.567v6.887h-1.861v-6.887h-6.57v-1.745h6.57V5.937H14.765z"/>
+            </g>
+            <g>
+                <path d="M13.833,27.167c-7.444,0-13.5-6.056-13.5-13.5s6.056-13.5,13.5-13.5s13.5,6.056,13.5,13.5
+                                            S21.277,27.167,13.833,27.167z M13.833,2.03c-6.417,0-11.638,5.221-11.638,11.638s5.221,11.638,11.638,11.638
+                                            s11.638-5.221,11.638-11.639S20.25,2.03,13.833,2.03z"/>
+            </g>
+        </g>
+    </symbol>
+</svg>
 <div class="scroll-handler">
     <div class="header-wrapper">
         <div class="header-wrapper__inner">
@@ -138,7 +153,7 @@
                                         <div class="buttons-holder">
                                             <ul class="button--float-left">
                                                 <li class="gallery__items gallery__items--mod">
-                                                    <span class="more-info button button--green">Edit Info</span>
+                                                    <span class="edit-product more-info button button--green ">Edit Info</span>
                                                     <div class="product-card product-card--view" id="product-card">
                                                         <div class="product-card__wrapper product-card--mod">
                                                             <div class="product-card__close-icon">X</div>
@@ -146,6 +161,119 @@
                                                                 <label for="input-price">Input new Price</label>
                                                                 <input id="input-price" type="number">
                                                                 <button type="submit" class="button button--green button--float-right">Publish</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card product-card--edit-product">
+                                                        <div class="product-card__wrapper--main">
+                                                            <div class="product-card__close-icon--edit">X</div>
+                                                            <form action="post" class="product-card__wrapper product-card__wrapper--scroll product-card__publictions">
+                                                                <div class="image-continer">
+                                                                    <div class="add-product__add-image--wrapper">
+                                                                        <input type="file" accept="image/*">
+                                                                        <img src="images/item-card1.png" alt="" class="big-image">
+                                                                    </div>
+                                                                    <div class="add-product__add-image--wrapper">
+                                                                        <input type="file" accept="image/*">
+                                                                        <img src="images/item-card1.png" alt="" class="small-img">
+                                                                    </div>
+                                                                    <div class="add-product__add-image--wrapper">
+                                                                        <input type="file" accept="image/*">
+                                                                        <img src="images/item-card1.png" alt="" class="small-img">
+                                                                    </div>
+
+                                                                    <div class="add-product__add-image--wrapper">
+                                                                        <input type="file" accept="image/*">
+                                                                        <svg class="add-product__add-image add-product__add-image--small">
+                                                                            <use xlink:href="#plus-icon"></use>
+                                                                        </svg>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product-details">
+                                                                    <div class="product-details__small-wrapper">
+                                                                        <img src="images/item-card1.png" alt="" class="small-img">
+                                                                        <span class="seamsterss-name">Seamsterss name : <strong>Anna</strong></span>
+                                                                    </div>
+                                                                    <div class="product-details__small-wrapper">
+                                                                        <span>Title :</span><input type="text" value="SHIRT WITH STRIPES">
+                                                                    </div>
+                                                                    <div class="product-details__small-wrapper">
+                                                                        <span>Price :</span><input type="text" value="75">
+                                                                    </div>
+
+                                                                    <span class="type">Shirt</span>
+                                                                    <span class="gender">Women</span>
+                                                                    <div class="product-details__small-wrapper">
+                                                                        <span>Description</span>
+                                                                        <textarea id="" cols="30" rows="10">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</textarea>
+                                                                    </div>
+
+                                                                    <div class="product-details__small-wrapper">
+                                                                        <span>Colors:</span>
+                                                                        <ul class="add-product__colors">
+                                                                            <li>
+                                                                                <label for="color-black-edit" class="checkbox">
+                                                                                    <span class="checkbox__text">Black</span>
+                                                                                    <input id="color-black-edit" type="checkbox"
+                                                                                           class="checkbox__input">
+                                                                                    <span class="checkbox__custom-checkbox"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label for="color-white-edit" class="checkbox">
+                                                                                    <span class="checkbox__text">White</span>
+                                                                                    <input id="color-white-edit" type="checkbox"
+                                                                                           class="checkbox__input">
+                                                                                    <span class="checkbox__custom-checkbox"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label for="color-red-edit" class="checkbox">
+                                                                                    <span class="checkbox__text">Red</span>
+                                                                                    <input id="color-red-edit" type="checkbox"
+                                                                                           class="checkbox__input">
+                                                                                    <span class="checkbox__custom-checkbox"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                    <div class="product-details__small-wrapper">
+                                                                        <span>Sizes:</span>
+                                                                        <ul class="add-product__colors">
+                                                                            <li>
+                                                                                <label for="size-s-edit" class="checkbox">
+                                                                                    <span class="checkbox__text">S</span>
+                                                                                    <input id="size-s-edit" type="checkbox"
+                                                                                           class="checkbox__input">
+                                                                                    <span class="checkbox__custom-checkbox"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label for="size-m-edit" class="checkbox">
+                                                                                    <span class="checkbox__text">M</span>
+                                                                                    <input id="size-m-edit" type="checkbox"
+                                                                                           class="checkbox__input">
+                                                                                    <span class="checkbox__custom-checkbox"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label for="size-l-edit" class="checkbox">
+                                                                                    <span class="checkbox__text">L</span>
+                                                                                    <input id="size-l-edit" type="checkbox"
+                                                                                           class="checkbox__input">
+                                                                                    <span class="checkbox__custom-checkbox"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <select name="add-product--available" id="add-product--available"
+                                                                            class="add-product__select">
+                                                                        <option value="1">In-Stock</option>
+                                                                        <option value="2">Custom Tailoring</option>
+                                                                    </select>
+                                                                    <span class="button button--float-right">Save</span>
+                                                                </div>
                                                             </form>
                                                         </div>
                                                     </div>

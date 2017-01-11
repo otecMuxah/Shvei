@@ -108,6 +108,19 @@
         text-align: center;
         cursor: pointer;
     }
+    &__publictions {
+        justify-content: center;
+        .image-continer {
+            margin-right: 15px;
+        }
+        .small-img {
+            width: 150px;
+            height: auto;
+        }
+        .seamsterss-name {
+            text-align: right;
+        }
+    }
     .product-details {
         font-size: 18px;
         width: 52%;

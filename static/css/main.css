@@ -1035,6 +1035,17 @@ body {
     width: 20px;
     text-align: center;
     cursor: pointer; }
+  .product-card__publictions {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .product-card__publictions .image-continer {
+      margin-right: 15px; }
+    .product-card__publictions .small-img {
+      width: 150px;
+      height: auto; }
+    .product-card__publictions .seamsterss-name {
+      text-align: right; }
   .product-card .product-details {
     font-size: 18px;
     width: 52%; }
