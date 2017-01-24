@@ -16,6 +16,9 @@
         &:hover .dropdown {
             display: block;
         }
+        lang-french & {
+            margin-right: 10px;
+        }
     }
     &__wrapper {
         position: relative;
