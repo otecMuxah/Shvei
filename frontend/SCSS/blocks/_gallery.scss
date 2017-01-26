@@ -43,7 +43,7 @@
             color: $color-white;
             background: $color-dark-green;
             border-radius: 50%;
-
+            text-align: center;
         }
         &--mod {
             margin-bottom: 0;
@@ -74,7 +74,12 @@
             display: flex;
         }
     }
-
+    .french-lang {
+        .availability {
+            width: 75px;
+            height: 75px;
+        }
+    }
     &__item {
         display: flex;
         flex-direction: column;

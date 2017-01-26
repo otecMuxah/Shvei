@@ -5,6 +5,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     &__title {
         font-size: 20px;
@@ -25,8 +26,8 @@
         }
     }
     &__items {
-        margin-right: 15px;
-        flex: 0 0 35%;
+        margin: 0 0 7px 0;
+        flex: 0 0 50%;
         //&:nth-child(1) .colors__links {
         //    background: #cdcdcd;
         //}
