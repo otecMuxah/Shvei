@@ -1643,7 +1643,8 @@ body {
     background-size: contain;
     display: block;
     -ms-flex-negative: 0;
-        flex-shrink: 0; }
+        flex-shrink: 0;
+    margin-right: 10px; }
   .product-in-chat__details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1787,7 +1788,7 @@ body {
     .user-tab__shortcut:after {
       position: absolute;
       top: 6px;
-      right: 35%;
+      right: 30%;
       content: '';
       background-position: 0 -411px;
       width: 10px;
