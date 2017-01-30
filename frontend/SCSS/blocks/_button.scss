@@ -26,7 +26,7 @@
         margin-bottom: 15px;
     }
     &--margin-right {
-        margin-right: 30px;
+        margin-right: 50px;
     }
     &--red {
         background: darken(#FF1300,30%);
@@ -79,6 +79,12 @@
         .product-card--new-product {
             display: flex;
         }
+    }
+}
+.help-trigger {
+    cursor: pointer;
+    &:hover {
+        color: $color-yellow;
     }
 }
 @keyframes hvr-icon-pulse-grow {

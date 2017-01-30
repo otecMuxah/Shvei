@@ -126,7 +126,7 @@ body {
   .button--magrin-bott {
     margin-bottom: 15px; }
   .button--margin-right {
-    margin-right: 30px; }
+    margin-right: 50px; }
   .button--red {
     background: #660800;
     -webkit-transition: all 150ms linear;
@@ -173,6 +173,11 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
+.help-trigger {
+  cursor: pointer; }
+  .help-trigger:hover {
+    color: #e5bd62; }
 
 @-webkit-keyframes hvr-icon-pulse-grow {
   to {
