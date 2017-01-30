@@ -43,6 +43,11 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 15px;
+        .checkbox {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
     input {
         height: 30px;
