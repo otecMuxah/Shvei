@@ -125,6 +125,8 @@ body {
     display: none; }
   .button--magrin-bott {
     margin-bottom: 15px; }
+  .button--margin-right {
+    margin-right: 30px; }
   .button--red {
     background: #660800;
     -webkit-transition: all 150ms linear;
