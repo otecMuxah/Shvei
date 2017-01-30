@@ -427,7 +427,8 @@ body {
   .header-basket__link {
     color: #fff;
     font: 18px BodoniFLF-Roman, Arial, sans-serif;
-    padding: 9px 5px 9px 50px; }
+    padding: 9px 5px 9px 50px;
+    white-space: nowrap; }
     .header-basket__link:hover {
       color: #e5bd62; }
   .header-basket__item {

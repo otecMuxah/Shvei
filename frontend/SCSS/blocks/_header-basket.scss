@@ -6,9 +6,8 @@
     &__link {
         color: $color-white;
         font: 18px $font_roman;
-        //background: url("../images/sprite.png") no-repeat;
         padding: 9px 5px 9px 50px;
-
+        white-space: nowrap;
         &:hover {
             color: $color-yellow;
         }
