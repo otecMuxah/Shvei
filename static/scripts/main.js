@@ -2,6 +2,9 @@
  * Created by suxx_ on 29.09.2016.
  */
 $(document).ready(function () {
+    $(".help-trigger").on('click', function () {
+        $(this).closest('li').toggleClass('gallery__items--selected');
+    });
     $(".user-tab").on('click', function () {
         $(this).closest('.user-tab').toggleClass('user-tab--selected');
     });
@@ -55,7 +58,6 @@ $(document).ready(function () {
         $(".arrow").on('click', function () {
             $(this).closest('li').toggleClass('selected');
         });
-
         $(".more-info").on('click', function () {
             $(this).closest('li').toggleClass('gallery__items--selected');
         });
