@@ -1500,7 +1500,7 @@ body {
             justify-content: space-between; }
   .dialog-admin__buttons--transparent {
     background: transparent;
-    border: 1px solid #140c3b;
+    box-shadow: inset 0 0 1px 1px #140c3b;
     color: #140c3b; }
     .dialog-admin__buttons--transparent:hover {
       background: #140c3b;
@@ -1518,6 +1518,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .dialog-admin__vertical-blocks select {
+      min-height: 47px;
+      box-sizing: border-box; }
   .dialog-admin__aside {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 10%;
@@ -1882,6 +1885,14 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 15px; }
+    .register__item .checkbox {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%; }
   .register input {
     height: 30px;
     padding: 0 5px; }
