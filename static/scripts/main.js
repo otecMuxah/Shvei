@@ -2,6 +2,12 @@
  * Created by suxx_ on 29.09.2016.
  */
 $(document).ready(function () {
+    $("#verification-button").on('click', function () {
+        $('#custom-wrap').toggleClass('custom-wrap--selected');
+    });
+    $("#refuser-button").on('click', function () {
+        $('#custom-wrap').toggleClass('custom-wrap--active');
+    });
     $(".help-trigger").on('click', function () {
         $(this).closest('li').toggleClass('gallery__items--selected');
     });
@@ -70,6 +76,7 @@ $(document).ready(function () {
         $(".product-card__close-icon").on('click', function () {
             $(this).closest('li').toggleClass('gallery__items--selected');
             $(this).closest('.buttons-holder').toggleClass('buttons-holder--selected');
+            $('#custom-wrap').removeClass('gallery__items--selected gallery__items--active');
         });
         $("#add-new-product-button").on('click', function () {
             $(this).closest('.buttons-holder').toggleClass('buttons-holder--selected');

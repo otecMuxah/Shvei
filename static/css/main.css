@@ -217,6 +217,16 @@ body {
           flex-direction: column;
   height: 100%; }
 
+.custom-wrap--selected .product-card--verificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.custom-wrap--active .product-card--refuser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 @media screen and (max-width: 1400px) {
   .wrapper--outer {
     padding-right: 40px; } }
@@ -317,7 +327,11 @@ body {
           justify-content: space-between; }
   .header-nav__link {
     color: #fff;
-    font: 18px BodoniFLF-Roman, Arial, sans-serif; }
+    font: 18px BodoniFLF-Roman, Arial, sans-serif;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .header-nav__item {
     position: relative;
     padding-bottom: 20px; }
@@ -325,7 +339,7 @@ body {
       color: #e5bd62; }
     .header-nav__item:hover .dropdown {
       display: block; }
-    lang-french .header-nav__item {
+    .lang-french .header-nav__item {
       margin-right: 10px; }
   .header-nav__wrapper {
     position: relative;
@@ -1061,6 +1075,8 @@ body {
       height: auto; }
     .product-card__publictions .seamsterss-name {
       text-align: right; }
+  .product-card--verificate, .product-card--refuser {
+    display: none; }
   .product-card .product-details {
     font-size: 18px;
     width: 52%; }

@@ -121,6 +121,10 @@
             text-align: right;
         }
     }
+    &--verificate,
+    &--refuser {
+        display: none;
+    }
     .product-details {
         font-size: 18px;
         width: 52%;

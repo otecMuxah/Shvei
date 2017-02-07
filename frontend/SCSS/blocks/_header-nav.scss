@@ -5,7 +5,8 @@
     &__link {
         color: $color-white;
         font: 18px $font_roman;
-
+        text-align: center;
+        display: flex;
     }
     &__item {
         position: relative;
@@ -16,7 +17,7 @@
         &:hover .dropdown {
             display: block;
         }
-        lang-french & {
+        .lang-french & {
             margin-right: 10px;
         }
     }
