@@ -1688,13 +1688,15 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .product-in-chat__text--price {
-    font-size: 36px;
-    color: #e5bd62;
-    margin-bottom: 15px; }
-  .product-in-chat__text span {
-    color: #e5bd62;
-    margin-right: 5px; }
+  .product-in-chat__text {
+    text-transform: capitalize; }
+    .product-in-chat__text--price {
+      font-size: 36px;
+      color: #e5bd62;
+      margin-bottom: 15px; }
+    .product-in-chat__text span {
+      color: #e5bd62;
+      margin-right: 5px; }
   .product-in-chat__status {
     display: -webkit-box;
     display: -ms-flexbox;

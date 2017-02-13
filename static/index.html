@@ -963,3 +963,28 @@
 
 </html>
 
+<div id="custom-wrap">
+    <a href="{{path('discuss-details', {'order':order.id})}}" class="button button--blue button--magrin-bott">Discutez des détails    ({{messageRepository.countNewMessages(order, 4)}})</a>
+    <span class="button button--green  button--magrin-bott" id="verification-button">Verification</span>
+    <div class="product-card product-card--verificate">
+        <div class="product-card__wrapper product-card--mod">
+            <div class="product-card__close-icon">X</div>
+            <div>
+                <h2>êtes-vous sûr?</h2>
+
+                <a href="" class="button button--green button--float-right" >Verification</a>
+            </div>
+        </div>
+    </div>
+    <span class="button button--red  button--magrin-bott" id="refuser-button">Refuser</span>
+    <div class="product-card product-card--refuser">
+        <div class="product-card__wrapper product-card--mod">
+            <div class="product-card__close-icon">X</div>
+            <div>
+                <h2>êtes-vous sûr?</h2>
+
+                <a href="" class="button button--red button--float-right" >Refuser</a>
+            </div>
+        </div>
+    </div>
+</div>
